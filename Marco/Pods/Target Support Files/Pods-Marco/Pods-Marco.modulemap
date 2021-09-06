@@ -1,0 +1,6 @@
+framework module Pods_Marco {
+  umbrella header "Pods-Marco-umbrella.h"
+
+  export *
+  module * { export * }
+}
