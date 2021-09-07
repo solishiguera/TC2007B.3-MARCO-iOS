@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19A1DC9826E6E671003F88D0 /* hola.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9726E6E671003F88D0 /* hola.txt */; };
 		44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */; };
 		44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */; };
 		44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE626E6DB0A00BF42F8 /* ViewController.swift */; };
@@ -42,7 +41,6 @@
 		081172048EE6C4A12D8E0509 /* Pods-Marco-MarcoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.release.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marco_MarcoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		135D0D3B9B52C162303ED0AA /* Pods_MarcoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		19A1DC9726E6E671003F88D0 /* hola.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = hola.txt; sourceTree = SOURCE_ROOT; };
 		19CA0D5324FB0D70B3102A98 /* Pods-Marco-MarcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
 		44288BDF26E6DB0A00BF42F8 /* Marco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marco.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,7 +139,6 @@
 		44288BE126E6DB0A00BF42F8 /* Marco */ = {
 			isa = PBXGroup;
 			children = (
-				4484445426E6E4C200361F00 /* Service */,
 				4484445326E6E47600361F00 /* Controller */,
 				4484445226E6E46900361F00 /* View */,
 				4484445126E6E46400361F00 /* Model */,
@@ -193,14 +190,6 @@
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		4484445426E6E4C200361F00 /* Service */ = {
-			isa = PBXGroup;
-			children = (
-				19A1DC9726E6E671003F88D0 /* hola.txt */,
-			);
-			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,7 +302,6 @@
 			files = (
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
 				44288BEC26E6DB0D00BF42F8 /* Assets.xcassets in Resources */,
-				19A1DC9826E6E671003F88D0 /* hola.txt in Resources */,
 				44288BEA26E6DB0A00BF42F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
