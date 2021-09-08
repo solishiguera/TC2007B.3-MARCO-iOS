@@ -23,11 +23,13 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="Vu5-Rc-DY4">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="Vu5-Rc-DY4">
                     <rect key="frame" x="20" y="44" width="288" height="118"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fF-l6-Pus">
-                    <rect key="frame" x="428" y="91" width="25" height="24"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fF-l6-Pus">
+                    <rect key="frame" x="326" y="91" width="52" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
                     <color key="tintColor" systemColor="labelColor"/>
                     <state key="normal">
@@ -37,8 +39,9 @@
                         <action selector="exitBttnPressed:" destination="-1" eventType="touchUpInside" id="AeA-BY-ZPp"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-pp-VIQ">
-                    <rect key="frame" x="58" y="148" width="236" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-pp-VIQ">
+                    <rect key="frame" x="58" y="148" width="177" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Exposiciones ">
                         <color key="titleColor" systemColor="labelColor"/>
@@ -47,69 +50,45 @@
                         <action selector="bttnExpoPressed:" destination="-1" eventType="touchUpInside" id="gtj-f5-Ak8"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-em-wjl">
-                    <rect key="frame" x="60" y="210" width="253" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-em-wjl">
+                    <rect key="frame" x="60" y="210" width="194" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Visitas guíadas">
                         <color key="titleColor" systemColor="labelColor"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-f5-ecn">
-                    <rect key="frame" x="60" y="266" width="199" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-f5-ecn">
+                    <rect key="frame" x="60" y="266" width="140" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Calendario">
                         <color key="titleColor" systemColor="labelColor"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-R6-J9a">
-                    <rect key="frame" x="60" y="322" width="370" height="48"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf0-R6-J9a">
+                    <rect key="frame" x="60" y="322" width="311" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Reservación restaurante">
                         <color key="titleColor" systemColor="labelColor"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-Hc-NPJ">
-                    <rect key="frame" x="77" y="758" width="320" height="56"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-Hc-NPJ">
+                    <rect key="frame" x="77" y="758" width="261" height="56"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="165" id="423-eF-fdG"/>
-                        <constraint firstAttribute="height" constant="56" id="67o-ZR-pwH"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="mcz-75-T0q"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="Comprar Boletos" image="ticket.fill" catalog="system">
+                    <color key="tintColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Comprar Boletos">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
                     </state>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92941176469999998" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-            <constraints>
-                <constraint firstItem="2fF-l6-Pus" firstAttribute="leading" secondItem="Vu5-Rc-DY4" secondAttribute="trailing" constant="120" id="ABU-uN-rwr"/>
-                <constraint firstItem="DDe-f5-ecn" firstAttribute="top" secondItem="TY4-em-wjl" secondAttribute="bottom" constant="8" symbolic="YES" id="Elp-iO-3Cu"/>
-                <constraint firstItem="nKh-pp-VIQ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="104" id="G58-zT-wyD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2fF-l6-Pus" secondAttribute="trailing" constant="20" id="I9C-n9-SBM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DDe-f5-ecn" secondAttribute="trailing" constant="214" id="OWF-Z9-F6z"/>
-                <constraint firstItem="DDe-f5-ecn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="QQv-iB-cOu"/>
-                <constraint firstItem="jf0-R6-J9a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="TRa-e5-xGO"/>
-                <constraint firstItem="TY4-em-wjl" firstAttribute="top" secondItem="Vu5-Rc-DY4" secondAttribute="bottom" constant="48" id="TcV-mw-Vd9"/>
-                <constraint firstItem="2fF-l6-Pus" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="47" id="XTE-Mw-RBG"/>
-                <constraint firstItem="nKh-pp-VIQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="58" id="XeE-LS-9H1"/>
-                <constraint firstItem="Vu5-Rc-DY4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="YmW-Yu-mM4"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pdv-Hc-NPJ" secondAttribute="trailing" constant="76" id="aCM-dv-Ylo"/>
-                <constraint firstItem="jf0-R6-J9a" firstAttribute="top" secondItem="DDe-f5-ecn" secondAttribute="bottom" constant="8" symbolic="YES" id="byp-IM-bic"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="jf0-R6-J9a" secondAttribute="trailing" constant="43" id="dPo-OL-6ZZ"/>
-                <constraint firstItem="Vu5-Rc-DY4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ejY-Kv-qVE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TY4-em-wjl" secondAttribute="trailing" constant="160" id="o84-yw-NG4"/>
-                <constraint firstItem="TY4-em-wjl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="okn-ho-M7j"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2fF-l6-Pus" secondAttribute="bottom" constant="747" id="rom-IT-jNe"/>
-                <constraint firstItem="TY4-em-wjl" firstAttribute="top" secondItem="nKh-pp-VIQ" secondAttribute="bottom" constant="14" id="sdj-gR-4nG"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Pdv-Hc-NPJ" secondAttribute="bottom" constant="48" id="syF-RX-270"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="nKh-pp-VIQ" secondAttribute="trailing" constant="179" id="w65-zA-fBV"/>
-                <constraint firstItem="Pdv-Hc-NPJ" firstAttribute="top" secondItem="jf0-R6-J9a" secondAttribute="bottom" constant="388" id="xKm-O9-7lR"/>
-                <constraint firstItem="Pdv-Hc-NPJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="yG3-u0-LGI"/>
-            </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
         </view>
     </objects>
