@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Marco" customModuleProvider="target">
             <connections>
+                <outlet property="bttnComprarBoletos" destination="q3y-I7-U4R" id="eyk-ey-CBN"/>
                 <outlet property="bttnMenu" destination="H9M-kP-mS4" id="7Gs-A2-ZZG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,14 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-Z4-MYT">
-                    <rect key="frame" x="76" y="76" width="262" height="48"/>
+                    <rect key="frame" x="82" y="94" width="263" height="48"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="262" id="Dxd-bW-IeC"/>
-                        <constraint firstAttribute="height" constant="48" id="t4d-eV-2ah"/>
+                        <constraint firstAttribute="width" constant="263" id="6ko-6a-1wq"/>
+                        <constraint firstAttribute="height" constant="48" id="z5m-gs-9fY"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#MuseoDe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWp-WG-AuZ">
-                    <rect key="frame" x="5" y="150" width="404" height="93.5"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="#MuseoDe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWp-WG-AuZ">
+                    <rect key="frame" x="5" y="150" width="388" height="93.5"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="78"/>
                     <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="highlightedColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -38,71 +39,63 @@
                     <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BWQ-qi-sHg">
-                    <rect key="frame" x="-2" y="346" width="419" height="405"/>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
-                    <rect key="frame" x="77" y="779" width="261" height="56"/>
-                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="56" id="Ezk-aD-OVp"/>
-                        <constraint firstAttribute="width" constant="165" id="kGC-2c-aA1"/>
-                        <constraint firstAttribute="height" constant="56" id="mUA-tW-fB4"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                    <state key="normal" title="                 Comprar Boletos">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ticket.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jPL-aP-hLK">
-                    <rect key="frame" x="82" y="784.5" width="60" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="tintColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Marco" translatesAutoresizingMaskIntoConstraints="NO" id="BWQ-qi-sHg">
+                    <rect key="frame" x="0.0" y="318" width="414" height="402"/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H9M-kP-mS4">
-                    <rect key="frame" x="12" y="76" width="43" height="41"/>
+                    <rect key="frame" x="20" y="94" width="40" height="41"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal">
-                        <imageReference key="image" image="music.note" catalog="system" symbolScale="large"/>
+                        <imageReference key="image" image="Hamburger" symbolScale="large"/>
                     </state>
                     <connections>
                         <action selector="bttnMenuPressed:" destination="-1" eventType="touchUpInside" id="PJq-2Q-E19"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
+                    <rect key="frame" x="71" y="794" width="273" height="56"/>
+                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="273" id="V5D-tf-hrY"/>
+                        <constraint firstAttribute="height" constant="56" id="ad7-wO-III"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                    <state key="normal" title="Comprar Boletos">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="H9M-kP-mS4" secondAttribute="trailing" constant="21" id="4c1-EJ-J30"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" constant="5" id="66F-fb-cHp"/>
-                <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="6EO-gd-NyG"/>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="H9M-kP-mS4" secondAttribute="trailing" constant="21" id="74Q-Xl-zCy"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hUZ-7W-cOu" secondAttribute="trailing" constant="195" id="80V-hQ-ZUH"/>
-                <constraint firstItem="q3y-I7-U4R" firstAttribute="top" secondItem="BWQ-qi-sHg" secondAttribute="bottom" constant="28" id="9d1-xP-hIe"/>
-                <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="18" id="Clq-Sr-PNM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q3y-I7-U4R" secondAttribute="bottom" constant="27" id="Jaj-Pm-kZX"/>
-                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="H9M-kP-mS4" secondAttribute="bottom" constant="33" id="LMJ-YQ-2RU"/>
-                <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="PdQ-0s-GDM"/>
-                <constraint firstAttribute="trailing" secondItem="BWQ-qi-sHg" secondAttribute="trailing" constant="-3" id="QkK-Ad-N1e"/>
-                <constraint firstItem="q3y-I7-U4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="Sfb-FZ-219"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q3y-I7-U4R" secondAttribute="trailing" constant="76" id="bUo-CY-Mh5"/>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="d0E-rM-hcT"/>
-                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="26" id="eyy-jz-gLP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNz-Z4-MYT" secondAttribute="trailing" constant="76" id="hbX-PD-Zuq"/>
-                <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="18" id="sz4-cY-1Te"/>
-                <constraint firstItem="BWQ-qi-sHg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-2" id="tUl-LY-uxA"/>
-                <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="bWp-WG-AuZ" secondAttribute="bottom" constant="102.5" id="uOM-kT-X20"/>
+                <constraint firstItem="hUZ-7W-cOu" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="92" id="09U-A5-gdq"/>
+                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="8" symbolic="YES" id="7WP-tc-L93"/>
+                <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="bWp-WG-AuZ" secondAttribute="bottom" constant="74.5" id="CKK-IQ-3LO"/>
+                <constraint firstItem="q3y-I7-U4R" firstAttribute="top" secondItem="BWQ-qi-sHg" secondAttribute="bottom" constant="51" id="Cxp-oI-RvY"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="H9M-kP-mS4" secondAttribute="trailing" constant="22" id="G4A-Iz-KJK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q3y-I7-U4R" secondAttribute="bottom" constant="12" id="GQu-Nu-x6h"/>
+                <constraint firstItem="q3y-I7-U4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="71" id="JaS-DC-aCa"/>
+                <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="NeN-7t-MT3"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="H9M-kP-mS4" secondAttribute="trailing" constant="22" id="OrQ-u5-6tc"/>
+                <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="R06-7Q-lrc"/>
+                <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="cvA-n6-Q2X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q3y-I7-U4R" secondAttribute="trailing" constant="70" id="gmI-mN-QYt"/>
+                <constraint firstItem="BWQ-qi-sHg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ilp-KH-lNR"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="LNz-Z4-MYT" secondAttribute="trailing" constant="69" id="jwa-79-LR7"/>
+                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="H9M-kP-mS4" secondAttribute="bottom" constant="15" id="q8E-jK-VFw"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="wDT-CQ-EWa"/>
+                <constraint firstItem="BWQ-qi-sHg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zZo-Ly-mbw"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="77.678571428571431"/>
         </view>
     </objects>
     <resources>
+        <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
-        <image name="music.note" catalog="system" width="97" height="128"/>
-        <image name="ticket.fill" catalog="system" width="128" height="84"/>
+        <image name="Marco" width="770" height="578"/>
     </resources>
 </document>

@@ -197,12 +197,12 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */,
-				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
 				44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */,
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
+				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
 				443BE9CF26E8EB3000C406DE /* HomeViewController.xib */,
 				49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */,
+				19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -212,8 +212,8 @@
 			children = (
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
-				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
 				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
+				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
 				19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */,
 			);
 			path = Controller;

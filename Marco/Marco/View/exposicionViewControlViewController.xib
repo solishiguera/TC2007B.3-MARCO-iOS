@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -17,93 +18,99 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de exposicion" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-6G-TT5">
-                    <rect key="frame" x="51" y="164" width="312" height="36"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exposiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-6G-TT5">
+                    <rect key="frame" x="102" y="138" width="210" height="41"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <color key="textColor" red="0.792156862745098" green="0.0" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="w9E-go-jp6">
-                    <rect key="frame" x="80" y="44" width="230" height="100"/>
-                    <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="0RL-dS-331"/>
-                        <constraint firstAttribute="width" constant="230" id="rFh-DK-JsV"/>
-                    </constraints>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="w9E-go-jp6">
+                    <rect key="frame" x="92" y="44" width="230" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Obra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-4b-daD">
-                    <rect key="frame" x="51" y="230" width="312" height="36"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="La poética del Regreso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-4b-daD">
+                    <rect key="frame" x="10" y="208" width="312" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="hOo-dK-hDT"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artista" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01i-yo-cxm">
-                    <rect key="frame" x="51" y="296" width="312" height="34"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Mario García Torres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01i-yo-cxm">
+                    <rect key="frame" x="10" y="252" width="312" height="34"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="34" id="e6N-1f-dRO"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YU-iQ-ubw">
-                    <rect key="frame" x="51" y="360" width="312" height="29"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2021.03.12 - 2021.11.14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YU-iQ-ubw">
+                    <rect key="frame" x="10" y="285" width="312" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-2s-rlG">
-                    <rect key="frame" x="0.0" y="419" width="414" height="200"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="200" id="aR8-T0-CoO"/>
-                    </constraints>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pintura" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-2s-rlG">
+                    <rect key="frame" x="0.0" y="344" width="414" height="292"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6X-ty-rUB">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6X-ty-rUB">
                     <rect key="frame" x="10" y="69" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="CpM-ZT-ulM"/>
                         <constraint firstAttribute="height" constant="50" id="l4f-3d-ELn"/>
                     </constraints>
+                    <state key="normal" image="Hamburger"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-5d-FPd">
+                    <rect key="frame" x="348" y="79" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <state key="normal" title="Button"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-5d-FPd">
-                    <rect key="frame" x="330" y="69" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pld-Og-RV4">
+                    <rect key="frame" x="20" y="638" width="381" height="433"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <mutableString key="text">En esta muestra curada por Taiyana Pimentel, 
+
+se establece un paralelismo entre las prácticas 
+
+posconceptuales y de inmersión en la construcción 
+
+histórica por la que se ha conocido a García Torres, 
+
+con los inicios de sus estrategias estéticas en las 
+
+ciudades de Monterrey y México; se analiza a
+
+ través de obras tempranas, las connotaciones del 
+
+sentido del espacio y del paisaje nacidos 
+
+tempranamente en la ciudad que le acogió en su 
+
+época de formación y que son conceptos que lo
+
+ han acompañado en su práctica artística posterior. </mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-            <constraints>
-                <constraint firstItem="NQV-6G-TT5" firstAttribute="top" secondItem="w9E-go-jp6" secondAttribute="bottom" constant="20" id="02Z-7s-r4X"/>
-                <constraint firstItem="6YU-iQ-ubw" firstAttribute="top" secondItem="01i-yo-cxm" secondAttribute="bottom" constant="30" id="1LS-mO-Ibt"/>
-                <constraint firstItem="6YU-iQ-ubw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="51" id="7GH-4q-4D4"/>
-                <constraint firstItem="01i-yo-cxm" firstAttribute="top" secondItem="ajj-4b-daD" secondAttribute="bottom" constant="30" id="7nU-66-id6"/>
-                <constraint firstItem="Eqa-5d-FPd" firstAttribute="leading" secondItem="w9E-go-jp6" secondAttribute="trailing" constant="20" id="8r0-jG-wVj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6YU-iQ-ubw" secondAttribute="trailing" constant="51" id="AOR-Ux-PTO"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01i-yo-cxm" secondAttribute="trailing" constant="51" id="ENA-ae-B60"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="leading" secondItem="b6X-ty-rUB" secondAttribute="trailing" constant="20" id="F1m-NF-Qcs"/>
-                <constraint firstItem="b6X-ty-rUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="JrG-Bc-AG4"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KHY-nR-4Sj"/>
-                <constraint firstItem="ajj-4b-daD" firstAttribute="top" secondItem="NQV-6G-TT5" secondAttribute="bottom" constant="30" id="Khq-kL-6cw"/>
-                <constraint firstItem="NQV-6G-TT5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MMf-gu-q0b"/>
-                <constraint firstItem="b6X-ty-rUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="QH3-fe-PLm"/>
-                <constraint firstItem="b6X-ty-rUB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="RRk-lr-0ki"/>
-                <constraint firstItem="P1x-2s-rlG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SAg-Vk-wb3"/>
-                <constraint firstItem="Eqa-5d-FPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="ZgG-Ob-YF0"/>
-                <constraint firstItem="6YU-iQ-ubw" firstAttribute="top" secondItem="01i-yo-cxm" secondAttribute="bottom" constant="30" id="agD-td-I51"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P1x-2s-rlG" secondAttribute="trailing" id="eQ8-TY-UPq"/>
-                <constraint firstItem="ajj-4b-daD" firstAttribute="top" secondItem="NQV-6G-TT5" secondAttribute="bottom" constant="30" id="gV5-0N-gNX"/>
-                <constraint firstItem="01i-yo-cxm" firstAttribute="top" secondItem="ajj-4b-daD" secondAttribute="bottom" constant="30" id="i9k-OJ-5Rd"/>
-                <constraint firstItem="01i-yo-cxm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="51" id="nhA-Nk-zCb"/>
-                <constraint firstItem="P1x-2s-rlG" firstAttribute="top" secondItem="6YU-iQ-ubw" secondAttribute="bottom" constant="30" id="qJi-V8-GfB"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01i-yo-cxm" secondAttribute="trailing" constant="51" id="sC3-MI-7Ox"/>
-            </constraints>
             <point key="canvasLocation" x="140.57971014492756" y="65.625"/>
         </view>
     </objects>
     <resources>
+        <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
+        <image name="Pintura" width="1280" height="720"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

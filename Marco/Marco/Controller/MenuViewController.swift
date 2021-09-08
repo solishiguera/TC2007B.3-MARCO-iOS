@@ -22,8 +22,8 @@ class MenuViewController: UIViewController {
     }
     @IBAction func bttnExpoPressed(_ sender: Any) {
         let exposicionUpViewController = exposicionViewControlViewController(nibName: "exposicionViewControlViewController", bundle: nil)
-        
-        self.navigationController?.pushViewController(exposicionUpViewController, animated: true)
+        exposicionUpViewController.modalPresentationStyle = .fullScreen
+        present(exposicionUpViewController, animated: true, completion: nil)
     }
     
 

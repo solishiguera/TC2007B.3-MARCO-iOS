@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
-        /*
+        
         if userField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             self.errorLabel.text = "Datos Faltantes"
         }else{
@@ -75,15 +75,16 @@ class ViewController: UIViewController {
                     self.errorLabel.text = "Datos Incorrectos"
                 } else {
                     // ir a pantalla inicio
+                    let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+                    self.navigationController?.pushViewController(homeViewController, animated: true)
                     self.errorLabel.text = "Logged In"
                 }
             }
             
-        } */
+        }
+        /*
         
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        self.navigationController?.pushViewController(homeViewController, animated: true)
-        
+        */
         
         
     }
