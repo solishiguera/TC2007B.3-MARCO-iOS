@@ -8,13 +8,24 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+    @IBOutlet weak var bttnExpo: UIButton!
+    @IBOutlet weak var bttnVisitas: UIButton!
+    @IBOutlet weak var bttnCalendario: UIButton!
+    @IBOutlet weak var bttnReserva: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func exitBttnPressed(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    @IBAction func bttnExpoPressed(_ sender: Any) {
+        let exposicionUpViewController = exposicionViewControlViewController(nibName: "exposicionViewControlViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(exposicionUpViewController, animated: true)
+    }
+    
 
     /*
     // MARK: - Navigation
