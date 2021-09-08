@@ -9,10 +9,10 @@ import UIKit
 
 class HomeViewController: UIViewController {
     @IBOutlet var bttnMenu: UIButton!
-    
+    @IBOutlet var bttnComprarBoletos: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        bttnComprarBoletos.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         viewWillDisappear(false)
     }
