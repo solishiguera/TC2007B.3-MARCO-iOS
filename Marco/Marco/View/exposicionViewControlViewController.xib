@@ -61,7 +61,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6X-ty-rUB">
-                    <rect key="frame" x="10" y="44" width="50" height="50"/>
+                    <rect key="frame" x="10" y="69" width="50" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="CpM-ZT-ulM"/>
                         <constraint firstAttribute="height" constant="50" id="l4f-3d-ELn"/>
@@ -69,7 +69,7 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-5d-FPd">
-                    <rect key="frame" x="330" y="44" width="46" height="30"/>
+                    <rect key="frame" x="330" y="69" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                 </button>
             </subviews>
@@ -89,9 +89,9 @@
                 <constraint firstItem="ajj-4b-daD" firstAttribute="top" secondItem="NQV-6G-TT5" secondAttribute="bottom" constant="30" id="Khq-kL-6cw"/>
                 <constraint firstItem="NQV-6G-TT5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="MMf-gu-q0b"/>
                 <constraint firstItem="b6X-ty-rUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="QH3-fe-PLm"/>
-                <constraint firstItem="b6X-ty-rUB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RRk-lr-0ki"/>
+                <constraint firstItem="b6X-ty-rUB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="RRk-lr-0ki"/>
                 <constraint firstItem="P1x-2s-rlG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SAg-Vk-wb3"/>
-                <constraint firstItem="Eqa-5d-FPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZgG-Ob-YF0"/>
+                <constraint firstItem="Eqa-5d-FPd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="25" id="ZgG-Ob-YF0"/>
                 <constraint firstItem="6YU-iQ-ubw" firstAttribute="top" secondItem="01i-yo-cxm" secondAttribute="bottom" constant="30" id="agD-td-I51"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P1x-2s-rlG" secondAttribute="trailing" id="eQ8-TY-UPq"/>
                 <constraint firstItem="ajj-4b-daD" firstAttribute="top" secondItem="NQV-6G-TT5" secondAttribute="bottom" constant="30" id="gV5-0N-gNX"/>
