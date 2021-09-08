@@ -41,6 +41,7 @@ class SignUpViewController: UIViewController {
         view.addGestureRecognizer(tap)
         
         viewWillDisappear(false)
+        // pop view controller
     }
     
     override func viewWillAppear(_ animated: Bool) {

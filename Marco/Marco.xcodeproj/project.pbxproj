@@ -18,6 +18,8 @@
 		44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */; };
 		44288BFA26E6DB0D00BF42F8 /* MarcoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BF926E6DB0D00BF42F8 /* MarcoTests.swift */; };
 		44288C0526E6DB0D00BF42F8 /* MarcoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288C0426E6DB0D00BF42F8 /* MarcoUITests.swift */; };
+		443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BE9CE26E8EB3000C406DE /* HomeViewController.swift */; };
+		443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443BE9CF26E8EB3000C406DE /* HomeViewController.xib */; };
 		49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */; };
 		49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */; };
 		87AF10C18AD4A35068B15829 /* Pods_Marco_MarcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */; };
@@ -65,6 +67,8 @@
 		44288C0026E6DB0D00BF42F8 /* MarcoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44288C0426E6DB0D00BF42F8 /* MarcoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarcoUITests.swift; sourceTree = "<group>"; };
 		44288C0626E6DB0D00BF42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443BE9CE26E8EB3000C406DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		443BE9CF26E8EB3000C406DE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionViewControlViewController.swift; sourceTree = "<group>"; };
 		49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exposicionViewControlViewController.xib; sourceTree = "<group>"; };
 		51C62C55EE3859E90BC96A39 /* Pods-MarcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.release.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
 				44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */,
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
+				443BE9CF26E8EB3000C406DE /* HomeViewController.xib */,
 				49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */,
 			);
 			path = View;
@@ -203,6 +208,7 @@
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
 				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
+				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
 				19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */,
 				49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */,
+				443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */,
 				44288BEA26E6DB0A00BF42F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +460,7 @@
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
+				443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
