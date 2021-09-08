@@ -68,26 +68,26 @@ class SignUpViewController: UIViewController {
     //Revisar si datos son validos
     func validarDatos() ->String? {
         //Revisar que los espacios obligatorios esten llenos
-        if nombreField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || primerApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            segundoApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        if //nombreField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || primerApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            //segundoApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             correoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             confirmarCorreoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             confirmPasswordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
-            return "Datos Faltantes"
+            self.displayAlert(title: "Error", message:"Datos Incompletos")
         }
         //Revisar si los correos son iguales
         if correoField.text != confirmarCorreoField.text {
-            return "Error Correos"
+            self.displayAlert(title: "Error", message:"Correos no coinciden")
         }
         //Revisar si las contraseñas soin iguales
         if passwordField.text != confirmPasswordField.text {
-            return "Error Contraseña"
+            self.displayAlert(title: "Error", message:"Contraseñas no coinciden")
         }
         let cleanPassword = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         //Revisar si contraseña es fuerte
         if passwordValid(cleanPassword) == false{
-            return "Contraseña Debil"
+            self.displayAlert(title: "Error", message:"Contraseñas debil")
         }
         
         
@@ -102,26 +102,29 @@ class SignUpViewController: UIViewController {
         if error != nil{
             labelTop.text = error!
         }else{
-            let nombre = nombreField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let apellidoP = primerApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let apellidoM = segundoApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //let nombre = nombreField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //let apellidoP = primerApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            //let apellidoM = segundoApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let correo = correoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             //Crear Usuario
             
             Auth.auth().createUser(withEmail: correo, password: password) { result, err in
                 if err != nil{
+                    self.displayAlert(title: "Error", message: err?.localizedDescription ?? "")
+                    print(err)
                     self.labelTop.text = "Error al crear"
                 }else{
-                    let db = Firestore.firestore()
-                    
-                    db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
-                        if error != nil {
-                            self.labelTop.text = "Error en DB"
-                        } else {
-                            //mover a pantalla inicio
-                        }
-                    }
+                    print("Usuario registrado \(result?.user.uid ?? "")")
+//                    let db = Firestore.firestore()
+//
+//                    db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
+//                        if error != nil {
+//                            self.labelTop.text = "Error en DB"
+//                        } else {
+//                            //mover a pantalla inicio
+//                        }
+//                    }
                 }
             }
         }
