@@ -72,6 +72,7 @@ class ViewController: UIViewController {
             
             Auth.auth().signIn(withEmail: correo, password: password) { result, err in
                 if err != nil {
+                    
                     self.errorLabel.text = "Datos Incorrectos"
                 } else {
                     // ir a pantalla inicio
