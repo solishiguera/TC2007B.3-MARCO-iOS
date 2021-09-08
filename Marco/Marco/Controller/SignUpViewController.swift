@@ -32,9 +32,32 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         registrar.layer.cornerRadius = 5
-
+        //Looks for single or multiple taps.
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
+        
+        viewWillDisappear(false)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
+    //Calls this function when the tap is recognized.
+    @objc func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
     
     func passwordValid(_ password : String) -> Bool{
         let test = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z]).{8,}$")
@@ -94,7 +117,7 @@ class SignUpViewController: UIViewController {
                     db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
                         if error != nil {
                             self.labelTop.text = "Error en DB"
-                        }else{
+                        } else {
                             //mover a pantalla inicio
                         }
                     }
