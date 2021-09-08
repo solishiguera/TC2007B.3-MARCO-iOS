@@ -9,7 +9,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpViewController" customModule="Marco" customModuleProvider="target">
             <connections>
+                <outlet property="confirmPasswordField" destination="Qxz-PL-0Hs" id="1OY-dD-OjU"/>
+                <outlet property="confirmarCorreoField" destination="fCG-Uv-CoX" id="aYB-9A-mBa"/>
+                <outlet property="correoField" destination="0b9-Ym-BTm" id="4V2-Fb-zc3"/>
+                <outlet property="labelTop" destination="4xb-zB-zch" id="0Sj-Fd-5Pm"/>
+                <outlet property="nombreField" destination="xju-E9-UAn" id="DMO-xF-wLl"/>
+                <outlet property="passwordField" destination="7h4-vV-ak2" id="eyM-kq-qJF"/>
+                <outlet property="primerApellidoField" destination="Dv0-oC-xbm" id="csJ-gj-Pa7"/>
                 <outlet property="registrar" destination="1vP-Ar-BcU" id="Eb5-7h-7pB"/>
+                <outlet property="segundoApellidoField" destination="I0G-Wk-io7" id="3ED-rL-V43"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,6 +42,11 @@
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="uFM-9c-ba7"/>
+                        </mask>
+                    </variation>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido Paterno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dv0-oC-xbm">
                     <rect key="frame" x="50" y="387" width="314" height="40"/>
@@ -131,7 +144,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro de Usuario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-zB-zch">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Registro de Usuario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xb-zB-zch">
                     <rect key="frame" x="132" y="239" width="150" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="aYI-Pv-Seo"/>
@@ -151,6 +164,9 @@
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                     <color key="tintColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <state key="normal" title="Registrar"/>
+                    <connections>
+                        <action selector="registroTap:" destination="-1" eventType="touchUpInside" id="JSz-Mu-Zwk"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

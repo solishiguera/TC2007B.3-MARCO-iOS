@@ -7,7 +7,10 @@ target 'Marco' do
 
   # Pods for Marco
 
-  pod ‘Firebase/Auth' 
+  pod ‘Firebase/Auth'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 
   target 'MarcoTests' do
     inherit! :search_paths
