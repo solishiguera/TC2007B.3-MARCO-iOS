@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             
             Auth.auth().signIn(withEmail: correo, password: password) { result, err in
                 if err != nil {
-                    
+                    self.displayAlert(title: "Error", message:"Datos Incorrectos")
                     self.errorLabel.text = "Datos Incorrectos"
                 } else {
                     // ir a pantalla inicio
@@ -83,11 +83,10 @@ class ViewController: UIViewController {
             }
             
         }
-        /*
-        
-        */
-        
-        
+    }
+    @IBAction func guestBttnPressed(_ sender: Any) {
+        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        self.navigationController?.pushViewController(homeViewController, animated: true)
     }
     
     
