@@ -72,9 +72,9 @@
                     <state key="normal" title="Button"/>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pld-Og-RV4">
-                    <rect key="frame" x="20" y="638" width="381" height="433"/>
+                    <rect key="frame" x="20" y="638" width="374" height="154"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <mutableString key="text">En esta muestra curada por Taiyana Pimentel, 
+                    <string key="text">En esta muestra curada por Taiyana Pimentel, 
 
 se establece un paralelismo entre las prácticas 
 
@@ -94,7 +94,7 @@ tempranamente en la ciudad que le acogió en su
 
 época de formación y que son conceptos que lo
 
- han acompañado en su práctica artística posterior. </mutableString>
+ han acompañado en su práctica artística posterior. </string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
