@@ -35,6 +35,9 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Invitado"/>
+                                <connections>
+                                    <action selector="guestBttnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28r-2g-083"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmh-z0-Dc2">
                                 <rect key="frame" x="124.5" y="545" width="165" height="56"/>

@@ -68,8 +68,8 @@ class SignUpViewController: UIViewController {
     //Revisar si datos son validos
     func validarDatos() ->String? {
         //Revisar que los espacios obligatorios esten llenos
-        if //nombreField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || primerApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            //segundoApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        if nombreField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || primerApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            segundoApellidoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             correoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             confirmarCorreoField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -79,15 +79,18 @@ class SignUpViewController: UIViewController {
         //Revisar si los correos son iguales
         if correoField.text != confirmarCorreoField.text {
             self.displayAlert(title: "Error", message:"Correos no coinciden")
+            return "Error Correos"
         }
         //Revisar si las contraseñas soin iguales
         if passwordField.text != confirmPasswordField.text {
             self.displayAlert(title: "Error", message:"Contraseñas no coinciden")
+            return "Error Contraseña"
         }
         let cleanPassword = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         //Revisar si contraseña es fuerte
         if passwordValid(cleanPassword) == false{
             self.displayAlert(title: "Error", message:"Contraseñas debil")
+            return "Contraseña Debil"
         }
         
         
@@ -102,9 +105,9 @@ class SignUpViewController: UIViewController {
         if error != nil{
             labelTop.text = error!
         }else{
-            //let nombre = nombreField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            //let apellidoP = primerApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            //let apellidoM = segundoApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let nombre = nombreField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let apellidoP = primerApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let apellidoM = segundoApellidoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let correo = correoField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             //Crear Usuario
@@ -116,15 +119,16 @@ class SignUpViewController: UIViewController {
                     self.labelTop.text = "Error al crear"
                 }else{
                     print("Usuario registrado \(result?.user.uid ?? "")")
-//                    let db = Firestore.firestore()
-//
-//                    db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
-//                        if error != nil {
-//                            self.labelTop.text = "Error en DB"
-//                        } else {
-//                            //mover a pantalla inicio
-//                        }
-//                    }
+                    let db = Firestore.firestore()
+
+                    db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
+                        if error != nil {
+                            self.labelTop.text = "Error en DB"
+                        } else {
+                            //manda a pagina de login
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                    }
                 }
             }
         }
