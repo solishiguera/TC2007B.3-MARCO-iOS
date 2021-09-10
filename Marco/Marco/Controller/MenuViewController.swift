@@ -12,9 +12,12 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var bttnVisitas: UIButton!
     @IBOutlet weak var bttnCalendario: UIButton!
     @IBOutlet weak var bttnReserva: UIButton!
+    @IBOutlet var bttnComprarBoletos: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWillDisappear(false)
+        bttnComprarBoletos.layer.cornerRadius = 5
     }
     
     override func viewWillAppear(_ animated: Bool) {
