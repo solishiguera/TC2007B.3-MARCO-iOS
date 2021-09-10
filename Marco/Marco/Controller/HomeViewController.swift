@@ -8,13 +8,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    @IBOutlet var bttnMenu: UIButton!
+    
     @IBOutlet var bttnComprarBoletos: UIButton!
+    @IBOutlet var bttnMenu: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         bttnComprarBoletos.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
-        viewWillDisappear(false)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +39,8 @@ class HomeViewController: UIViewController {
         
         self.navigationController?.present(menuViewController, animated: true, completion: nil)
     }
+    
+    
     
     /*
     // MARK: - Navigation

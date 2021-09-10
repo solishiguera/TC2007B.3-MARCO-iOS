@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Marco" customModuleProvider="target">
             <connections>
                 <outlet property="bttnCalendario" destination="jf0-R6-J9a" id="xdL-5r-aG5"/>
+                <outlet property="bttnComprarBoletos" destination="Pdv-Hc-NPJ" id="SOL-bA-Ol0"/>
                 <outlet property="bttnExpo" destination="nKh-pp-VIQ" id="b6v-Z0-abX"/>
                 <outlet property="bttnReserva" destination="jf0-R6-J9a" id="GdK-Mg-os3"/>
                 <outlet property="bttnVisitas" destination="TY4-em-wjl" id="R6e-uM-uy6"/>

@@ -8,11 +8,15 @@
 import UIKit
 
 class exposicionViewControlViewController: UIViewController {
-
+    
+    @IBOutlet var bttnMenu: UIButton!
+    @IBOutlet var bttnBoletos: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWillDisappear(false)
         // Do any additional setup after loading the view.
+        bttnBoletos.layer.cornerRadius = 5
         viewWillDisappear(false)
     }
     
@@ -26,7 +30,12 @@ class exposicionViewControlViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 
-
+    @IBAction func bttnMenuPressed(_ sender: Any) {
+        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
+        
+        self.navigationController?.present(menuViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
