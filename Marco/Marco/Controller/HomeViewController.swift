@@ -37,7 +37,7 @@ class HomeViewController: UIViewController {
     @IBAction func bttnMenuPressed(_ sender: Any) {
         let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
         
-        self.navigationController?.present(menuViewController, animated: true, completion: nil)
+        self.present(menuViewController, animated: true, completion: nil)
     }
     
     
