@@ -22,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="w9E-go-jp6">
-                    <rect key="frame" x="57" y="76" width="261" height="45"/>
+                    <rect key="frame" x="68" y="76" width="261" height="45"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="261" id="5yn-G4-ykW"/>
                         <constraint firstAttribute="height" constant="45" id="KhC-7k-Vki"/>
@@ -77,15 +77,15 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-5d-FPd" userLabel="Tickets">
-                    <rect key="frame" x="321" y="76.5" width="88" height="44"/>
+                    <rect key="frame" x="344" y="76.5" width="50" height="44"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="88" id="1od-1H-IIL"/>
+                        <constraint firstAttribute="width" constant="50" id="1od-1H-IIL"/>
                         <constraint firstAttribute="height" constant="44" id="rom-kG-4EV"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal" title="Boletos">
+                    <state key="normal">
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
                     </state>
@@ -110,11 +110,11 @@
                 <constraint firstItem="ajj-4b-daD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="SPL-hU-mM7"/>
                 <constraint firstItem="pld-Og-RV4" firstAttribute="top" secondItem="P1x-2s-rlG" secondAttribute="bottom" constant="15" id="UNK-U1-Xcz"/>
                 <constraint firstItem="6YU-iQ-ubw" firstAttribute="top" secondItem="01i-yo-cxm" secondAttribute="bottom" constant="12" id="VSb-tz-qbE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Eqa-5d-FPd" secondAttribute="trailing" constant="5" id="YxL-o1-So6"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Eqa-5d-FPd" secondAttribute="trailing" constant="20" id="YxL-o1-So6"/>
                 <constraint firstItem="NQV-6G-TT5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aGe-pv-4tg"/>
                 <constraint firstItem="w9E-go-jp6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="b6X-ty-rUB" secondAttribute="trailing" constant="5" id="aek-wy-f9N"/>
                 <constraint firstItem="w9E-go-jp6" firstAttribute="centerY" secondItem="b6X-ty-rUB" secondAttribute="centerY" id="qh1-we-Bx9"/>
-                <constraint firstItem="Eqa-5d-FPd" firstAttribute="leading" secondItem="w9E-go-jp6" secondAttribute="trailing" constant="3" id="qny-g6-uO9"/>
+                <constraint firstItem="Eqa-5d-FPd" firstAttribute="leading" secondItem="w9E-go-jp6" secondAttribute="trailing" constant="15" id="qny-g6-uO9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ajj-4b-daD" secondAttribute="trailing" id="ssV-NE-0i7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NQV-6G-TT5" secondAttribute="trailing" id="tQS-GQ-iGF"/>
                 <constraint firstItem="NQV-6G-TT5" firstAttribute="top" secondItem="w9E-go-jp6" secondAttribute="bottom" constant="25" id="w3o-Ag-B29"/>

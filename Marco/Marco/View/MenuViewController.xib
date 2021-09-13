@@ -14,6 +14,7 @@
                 <outlet property="bttnCalendario" destination="jf0-R6-J9a" id="xdL-5r-aG5"/>
                 <outlet property="bttnComprarBoletos" destination="Pdv-Hc-NPJ" id="SOL-bA-Ol0"/>
                 <outlet property="bttnExpo" destination="nKh-pp-VIQ" id="b6v-Z0-abX"/>
+                <outlet property="bttnInicio" destination="zIM-hs-dud" id="YQV-wI-nRc"/>
                 <outlet property="bttnReserva" destination="jf0-R6-J9a" id="GdK-Mg-os3"/>
                 <outlet property="bttnVisitas" destination="TY4-em-wjl" id="R6e-uM-uy6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -41,7 +42,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-pp-VIQ">
-                    <rect key="frame" x="58" y="148" width="177" height="48"/>
+                    <rect key="frame" x="60" y="210" width="177" height="48"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="30"/>
                     <state key="normal" title="Exposiciones ">
@@ -50,14 +51,6 @@
                     <connections>
                         <action selector="bttnExpoPressed:" destination="-1" eventType="touchUpInside" id="gtj-f5-Ak8"/>
                     </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-em-wjl">
-                    <rect key="frame" x="60" y="210" width="194" height="48"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                    <state key="normal" title="Visitas guíadas">
-                        <color key="titleColor" systemColor="labelColor"/>
-                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDe-f5-ecn">
                     <rect key="frame" x="60" y="266" width="140" height="48"/>
@@ -75,6 +68,17 @@
                         <color key="titleColor" systemColor="labelColor"/>
                     </state>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zIM-hs-dud">
+                    <rect key="frame" x="60" y="154" width="69" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Inicio">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="bttnInicioPressed:" destination="-1" eventType="touchUpInside" id="4MT-Jc-zDf"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdv-Hc-NPJ">
                     <rect key="frame" x="77" y="758" width="261" height="56"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -85,6 +89,14 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-em-wjl">
+                    <rect key="frame" x="60" y="378" width="194" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Visitas guíadas">
+                        <color key="titleColor" systemColor="labelColor"/>
                     </state>
                 </button>
             </subviews>

@@ -14,6 +14,8 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var bttnReserva: UIButton!
     @IBOutlet var bttnComprarBoletos: UIButton!
     
+    @IBOutlet var bttnInicio: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         viewWillDisappear(false)
@@ -39,6 +41,13 @@ class MenuViewController: UIViewController {
         exposicionUpViewController.modalPresentationStyle = .fullScreen
         present(exposicionUpViewController, animated: true, completion: nil)
     }
+    
+    @IBAction func bttnInicioPressed(_ sender: Any) {
+        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
+        homeViewController.modalPresentationStyle = .fullScreen
+        present(homeViewController, animated: true, completion: nil)
+    }
+    
     
 
     /*
