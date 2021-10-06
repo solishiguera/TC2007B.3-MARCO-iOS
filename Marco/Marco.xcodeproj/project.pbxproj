@@ -13,6 +13,7 @@
 		19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */; };
 		19A1DCA026E8F0B9003F88D0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */; };
 		19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DCA226E90C0B003F88D0 /* Extensions.swift */; };
+		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
 		44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */; };
 		44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */; };
 		44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE626E6DB0A00BF42F8 /* ViewController.swift */; };
@@ -59,6 +60,7 @@
 		19A1DCA226E90C0B003F88D0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		19CA0D5324FB0D70B3102A98 /* Pods-Marco-MarcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
+		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		44288BDF26E6DB0A00BF42F8 /* Marco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
 				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
 				19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */,
+				44116955270DEA3100572772 /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
+				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
 				19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */,
 				49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
