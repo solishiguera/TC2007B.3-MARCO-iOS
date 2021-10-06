@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -44,12 +46,10 @@
                         <constraint firstAttribute="width" secondItem="BWQ-qi-sHg" secondAttribute="height" multiplier="107:68" id="JjA-VN-uHT"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
-                    <rect key="frame" x="78" y="783" width="273" height="65"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
+                    <rect key="frame" x="78" y="636" width="273" height="65"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="65" id="aXV-hj-elr"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title=" Comprar Boletos">
@@ -84,13 +84,10 @@
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="50" id="9xw-Ex-dJa"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="PUH-YZ-wJn" secondAttribute="bottom" constant="15" id="B9L-L4-P8q"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DYy-Y9-TkF"/>
-                <constraint firstItem="q3y-I7-U4R" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="78" id="Dpg-Du-dhv"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="q3y-I7-U4R" secondAttribute="bottom" constant="44" id="Pc5-Dp-uxF"/>
                 <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="RYo-Ka-GK5"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="Tfg-HO-eLs"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZdE-Lp-Nn4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" id="e95-aL-9hi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="q3y-I7-U4R" secondAttribute="trailing" constant="77" id="fat-O8-ng7"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gnQ-Rf-a7x"/>
                 <constraint firstItem="PUH-YZ-wJn" firstAttribute="centerY" secondItem="LNz-Z4-MYT" secondAttribute="centerY" id="uiX-Ge-WlD"/>
                 <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="PUH-YZ-wJn" secondAttribute="trailing" constant="10" id="w7B-B4-wAa"/>
@@ -98,11 +95,42 @@
             </constraints>
             <point key="canvasLocation" x="137.38317757009344" y="77.105831533477328"/>
         </view>
+        <tabBarController id="iyZ-cA-U8y">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RhC-zZ-vUc">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="QZi-0b-E3O">
+                    <view key="view" contentMode="scaleToFill" id="ETN-r3-IsU">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="A21-tu-5Cj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="KuA-aF-sva"/>
+                </viewController>
+                <viewController id="Vwt-Gv-4fO">
+                    <view key="view" contentMode="scaleToFill" id="ePv-sg-2ch">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="zyu-XP-arM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="4R3-G2-Lq6"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="881" y="97"/>
+        </tabBarController>
     </objects>
     <resources>
         <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
         <image name="Marco" width="770" height="578"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

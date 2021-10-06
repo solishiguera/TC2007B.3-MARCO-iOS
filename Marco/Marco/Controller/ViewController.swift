@@ -76,8 +76,9 @@ class ViewController: UIViewController {
                     self.errorLabel.text = "Datos Incorrectos"
                 } else {
                     // ir a pantalla inicio
-                    let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-                    self.navigationController?.pushViewController(homeViewController, animated: true)
+                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                    let TabBarViewController = storyboard.instantiateViewController(withIdentifier: "tabbar")
+                    self.navigationController?.pushViewController(TabBarViewController, animated: true)
                     self.errorLabel.text = "Logged In"
                 }
             }
@@ -85,10 +86,10 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func guestBttnPressed(_ sender: Any) {
-        let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        self.navigationController?.pushViewController(homeViewController, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let TabBarViewController = storyboard.instantiateViewController(withIdentifier: "tabbar")
+        self.navigationController?.pushViewController(TabBarViewController, animated: true)
     }
-    
     
     
 }
