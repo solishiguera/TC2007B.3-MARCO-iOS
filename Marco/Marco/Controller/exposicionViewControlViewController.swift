@@ -16,7 +16,6 @@ class exposicionViewControlViewController: UIViewController {
         super.viewDidLoad()
         viewWillDisappear(false)
         // Do any additional setup after loading the view.
-        bttnBoletos.layer.cornerRadius = 5
         viewWillDisappear(false)
     }
     
