@@ -9,13 +9,19 @@ import UIKit
 
 class TicketViewController: UIViewController {
 
+    @IBOutlet weak var comprarBoletoBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func comprarBoleto(_ sender: Any) {
+        let buyTicketViewController = BuyTicketViewController(nibName: "BuyTicketViewController", bundle: nil)
+        
+        self.present(buyTicketViewController, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
