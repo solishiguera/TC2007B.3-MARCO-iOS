@@ -37,10 +37,12 @@ class TabBarViewController: UITabBarController {
             title: "Exposiciones",
             image: UIImage(systemName: "paintbrush"),
             tag: 4)
-                
-        self.viewControllers = controllers
         
-        //UIApplication.shared.windows.first?.rootViewController = tabBarController
+        UITabBar.appearance().unselectedItemTintColor = UIColor.black
+        UITabBar.appearance().tintColor = UIColor(red: 0.79, green: 0.00, blue: 0.53, alpha: 1.0)
+        self.viewControllers = controllers
+        self.navigationItem.setHidesBackButton(true, animated: true)
+        
         }
         
         

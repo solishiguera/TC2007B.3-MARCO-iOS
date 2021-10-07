@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -13,7 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Marco" customModuleProvider="target">
             <connections>
                 <outlet property="bttnComprarBoletos" destination="q3y-I7-U4R" id="eyk-ey-CBN"/>
-                <outlet property="bttnMenu" destination="PUH-YZ-wJn" id="dUx-G2-yVC"/>
+                <outlet property="tag" destination="hUZ-7W-cOu" id="pK9-uP-je8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -23,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#MuseoDe" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWp-WG-AuZ">
-                    <rect key="frame" x="4" y="141" width="424" height="56.333333333333343"/>
+                    <rect key="frame" x="4" y="123.99999999999999" width="424" height="56.333333333333329"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="bWp-WG-AuZ" secondAttribute="height" multiplier="428:57" id="WcF-wI-rf5"/>
                     </constraints>
@@ -32,7 +31,7 @@
                     <color key="highlightedColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Todos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUZ-7W-cOu">
-                    <rect key="frame" x="4" y="201.33333333333334" width="424" height="65.666666666666657"/>
+                    <rect key="frame" x="4" y="184.33333333333334" width="424" height="65.666666666666657"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="hUZ-7W-cOu" secondAttribute="height" multiplier="214:33" id="1lO-WX-3Iw"/>
                     </constraints>
@@ -41,7 +40,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marco" translatesAutoresizingMaskIntoConstraints="NO" id="BWQ-qi-sHg">
-                    <rect key="frame" x="0.0" y="317" width="428" height="272"/>
+                    <rect key="frame" x="0.0" y="300" width="428" height="272"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="BWQ-qi-sHg" secondAttribute="height" multiplier="107:68" id="JjA-VN-uHT"/>
                     </constraints>
@@ -56,20 +55,12 @@
                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
                     </state>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUH-YZ-wJn" userLabel="bttnMenu">
-                    <rect key="frame" x="15" y="76" width="50" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="nYI-LF-5cs"/>
-                        <constraint firstAttribute="height" constant="50" id="zM6-ru-oQN"/>
-                    </constraints>
-                    <state key="normal" title="Button" image="Hamburger"/>
                     <connections>
-                        <action selector="bttnMenuPressed:" destination="-1" eventType="touchUpInside" id="Td3-SX-LKl"/>
+                        <action selector="comprarBoleto:" destination="-1" eventType="touchUpInside" id="FNk-DY-Wd5"/>
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-Z4-MYT">
-                    <rect key="frame" x="75" y="76" width="261" height="50"/>
+                    <rect key="frame" x="83.666666666666686" y="59" width="261" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="261" id="aP0-pd-IJj"/>
                         <constraint firstAttribute="height" constant="50" id="fWD-VF-fvL"/>
@@ -81,17 +72,15 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hUZ-7W-cOu" secondAttribute="trailing" id="5cs-mR-qfd"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="top" secondItem="bWp-WG-AuZ" secondAttribute="bottom" constant="4" id="6JQ-hY-Tpp"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="7Wb-zc-gNy"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="50" id="9xw-Ex-dJa"/>
-                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="PUH-YZ-wJn" secondAttribute="bottom" constant="15" id="B9L-L4-P8q"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DYy-Y9-TkF"/>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="RYo-Ka-GK5"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JlE-gt-C4u"/>
+                <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="15" id="T70-GN-uPQ"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="Tfg-HO-eLs"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZdE-Lp-Nn4"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" id="e95-aL-9hi"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gnQ-Rf-a7x"/>
-                <constraint firstItem="PUH-YZ-wJn" firstAttribute="centerY" secondItem="LNz-Z4-MYT" secondAttribute="centerY" id="uiX-Ge-WlD"/>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="leading" secondItem="PUH-YZ-wJn" secondAttribute="trailing" constant="10" id="w7B-B4-wAa"/>
-                <constraint firstItem="PUH-YZ-wJn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="zaG-Qb-NGY"/>
             </constraints>
             <point key="canvasLocation" x="137.38317757009344" y="77.105831533477328"/>
         </view>
@@ -125,7 +114,6 @@
         </tabBarController>
     </objects>
     <resources>
-        <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
         <image name="Marco" width="770" height="578"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>
