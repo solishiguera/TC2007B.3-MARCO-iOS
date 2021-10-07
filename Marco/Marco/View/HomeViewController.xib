@@ -55,6 +55,9 @@
                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
                     </state>
+                    <connections>
+                        <action selector="comprarBoleto:" destination="-1" eventType="touchUpInside" id="FNk-DY-Wd5"/>
+                    </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-Z4-MYT">
                     <rect key="frame" x="83.666666666666686" y="59" width="261" height="50"/>

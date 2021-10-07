@@ -54,6 +54,11 @@ class HomeViewController: UIViewController {
         self.present(menuViewController, animated: true, completion: nil)
     }
     
+    @IBAction func comprarBoleto(_ sender: Any) {
+        let buyTicketViewController = BuyTicketViewController(nibName: "BuyTicketViewController", bundle: nil)
+        
+        self.present(buyTicketViewController, animated: true, completion: nil)
+    }
     
     
     /*

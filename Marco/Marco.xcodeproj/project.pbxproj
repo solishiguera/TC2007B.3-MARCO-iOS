@@ -32,6 +32,8 @@
 		49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */; };
 		87AF10C18AD4A35068B15829 /* Pods_Marco_MarcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */; };
 		AD18A1E3C3735259A7C0E6CF /* Pods_Marco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */; };
+		C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423C38C270E896C009B73EA /* BuyTicketViewController.swift */; };
+		C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C423C38D270E896C009B73EA /* BuyTicketViewController.xib */; };
 		D7B53E478565A829362E419E /* Pods_MarcoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135D0D3B9B52C162303ED0AA /* Pods_MarcoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,8 @@
 		6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EED6801775C167CD6EED634 /* Pods-MarcoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.debug.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99DAF2EFB45A2049B9EC2FAE /* Pods-Marco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.debug.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.debug.xcconfig"; sourceTree = "<group>"; };
+		C423C38C270E896C009B73EA /* BuyTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketViewController.swift; sourceTree = "<group>"; };
+		C423C38D270E896C009B73EA /* BuyTicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyTicketViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
 				44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */,
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
 				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
@@ -233,6 +238,7 @@
 		4484445326E6E47600361F00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C423C38C270E896C009B73EA /* BuyTicketViewController.swift */,
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
 				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
@@ -353,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */,
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
 				44288BEC26E6DB0D00BF42F8 /* Assets.xcassets in Resources */,
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
@@ -501,6 +508,7 @@
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
 				4411695D270E7F8700572772 /* RestaurantViewController.swift in Sources */,
 				443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */,
+				C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
