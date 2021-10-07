@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
     
@@ -25,7 +26,7 @@ class HomeViewController: UIViewController {
         bttnComprarBoletos.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         navigationController?.setNavigationBarHidden(false, animated: false)
-        /*
+        
         if Auth.auth().currentUser != nil{
             let user = Auth.auth().currentUser
             let uid : String = user!.uid
@@ -34,7 +35,6 @@ class HomeViewController: UIViewController {
             self.tag.text = name as? String
         }
         }
-         */
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,7 +65,16 @@ class HomeViewController: UIViewController {
         self.present(buyTicketViewController, animated: true, completion: nil)
     }
     
-    
+    @IBAction func logOut(_ sender: Any) {
+        if Auth.auth().currentUser != nil{
+            do {
+                try? Auth.auth().signOut()
+            }
+        }
+        else{
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
     /*
     // MARK: - Navigation
 
