@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,8 +11,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="exposicionViewControlViewController" customModule="Marco" customModuleProvider="target">
             <connections>
-                <outlet property="bttnBoletos" destination="Eqa-5d-FPd" id="lJL-cJ-3Q8"/>
-                <outlet property="bttnMenu" destination="b6X-ty-rUB" id="2rZ-rS-peT"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,74 +20,49 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="w9E-go-jp6">
-                    <rect key="frame" x="68" y="76" width="261" height="45"/>
+                    <rect key="frame" x="76.5" y="59" width="261" height="45"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="261" id="5yn-G4-ykW"/>
                         <constraint firstAttribute="height" constant="45" id="KhC-7k-Vki"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6X-ty-rUB" userLabel="DropDown">
-                    <rect key="frame" x="7" y="78.5" width="40" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="3Mq-yQ-t9g"/>
-                        <constraint firstAttribute="width" constant="40" id="T7m-2w-bjq"/>
-                    </constraints>
-                    <state key="normal" image="Hamburger"/>
-                    <connections>
-                        <action selector="bttnMenuPressed:" destination="-1" eventType="touchUpInside" id="rPg-MZ-Vmv"/>
-                    </connections>
-                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exposiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQV-6G-TT5">
-                    <rect key="frame" x="0.0" y="146" width="414" height="41"/>
+                    <rect key="frame" x="0.0" y="129" width="414" height="41"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <color key="textColor" red="0.792156862745098" green="0.0" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La poética del Regreso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajj-4b-daD">
-                    <rect key="frame" x="3" y="216" width="411" height="38.5"/>
+                    <rect key="frame" x="3" y="199" width="411" height="38.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="32"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mario García Torres" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01i-yo-cxm">
-                    <rect key="frame" x="3" y="260" width="411" height="30"/>
+                    <rect key="frame" x="3" y="243" width="411" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021.03.12 - 2021.11.14" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YU-iQ-ubw">
-                    <rect key="frame" x="3" y="302" width="411" height="21"/>
+                    <rect key="frame" x="3" y="285" width="411" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" systemColor="secondaryLabelColor"/>
                     <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </label>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PoeticaDelRegreso" translatesAutoresizingMaskIntoConstraints="NO" id="P1x-2s-rlG">
-                    <rect key="frame" x="0.0" y="352.5" width="414" height="251"/>
+                    <rect key="frame" x="0.0" y="335.5" width="414" height="251"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="P1x-2s-rlG" secondAttribute="height" multiplier="414:251" id="JLL-NM-6oY"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pld-Og-RV4">
-                    <rect key="frame" x="3" y="618.5" width="411" height="81.5"/>
+                    <rect key="frame" x="3" y="601.5" width="411" height="81.5"/>
                     <string key="text">texto textotexto texto texto texto texto texto texto texto texto texto texto texto texto textotexto textotexto texto texto texto texto texto texto texto texto texto texto texto texto texto </string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqa-5d-FPd" userLabel="Tickets">
-                    <rect key="frame" x="344" y="76.5" width="50" height="44"/>
-                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="1od-1H-IIL"/>
-                        <constraint firstAttribute="height" constant="44" id="rom-kG-4EV"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <state key="normal">
-                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <imageReference key="image" image="ticket.fill" catalog="system" symbolScale="large"/>
-                    </state>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -98,23 +71,18 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6YU-iQ-ubw" secondAttribute="trailing" id="45Y-ZF-74N"/>
                 <constraint firstItem="ajj-4b-daD" firstAttribute="top" secondItem="NQV-6G-TT5" secondAttribute="bottom" constant="29" id="51h-ZD-doi"/>
                 <constraint firstItem="P1x-2s-rlG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="5Qz-2o-koy"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="centerY" secondItem="Eqa-5d-FPd" secondAttribute="centerY" id="BFB-o8-kr2"/>
                 <constraint firstAttribute="trailing" secondItem="pld-Og-RV4" secondAttribute="trailing" id="BcC-gO-ACL"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="01i-yo-cxm" secondAttribute="trailing" id="Czb-ub-mZO"/>
                 <constraint firstItem="01i-yo-cxm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="ENW-DQ-mmd"/>
                 <constraint firstItem="01i-yo-cxm" firstAttribute="top" secondItem="ajj-4b-daD" secondAttribute="bottom" constant="5.5" id="ErS-WV-MX8"/>
                 <constraint firstItem="P1x-2s-rlG" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IBf-dQ-p8x"/>
-                <constraint firstItem="b6X-ty-rUB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="7" id="IvB-Lu-IUe"/>
                 <constraint firstItem="pld-Og-RV4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="Lcq-hX-vnU"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="OSE-GB-Wzk"/>
+                <constraint firstItem="w9E-go-jp6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="OSE-GB-Wzk"/>
                 <constraint firstItem="ajj-4b-daD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="3" id="SPL-hU-mM7"/>
+                <constraint firstItem="w9E-go-jp6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Twa-03-uMd"/>
                 <constraint firstItem="pld-Og-RV4" firstAttribute="top" secondItem="P1x-2s-rlG" secondAttribute="bottom" constant="15" id="UNK-U1-Xcz"/>
                 <constraint firstItem="6YU-iQ-ubw" firstAttribute="top" secondItem="01i-yo-cxm" secondAttribute="bottom" constant="12" id="VSb-tz-qbE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Eqa-5d-FPd" secondAttribute="trailing" constant="20" id="YxL-o1-So6"/>
                 <constraint firstItem="NQV-6G-TT5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aGe-pv-4tg"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="b6X-ty-rUB" secondAttribute="trailing" constant="5" id="aek-wy-f9N"/>
-                <constraint firstItem="w9E-go-jp6" firstAttribute="centerY" secondItem="b6X-ty-rUB" secondAttribute="centerY" id="qh1-we-Bx9"/>
-                <constraint firstItem="Eqa-5d-FPd" firstAttribute="leading" secondItem="w9E-go-jp6" secondAttribute="trailing" constant="15" id="qny-g6-uO9"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ajj-4b-daD" secondAttribute="trailing" id="ssV-NE-0i7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NQV-6G-TT5" secondAttribute="trailing" id="tQS-GQ-iGF"/>
                 <constraint firstItem="NQV-6G-TT5" firstAttribute="top" secondItem="w9E-go-jp6" secondAttribute="bottom" constant="25" id="w3o-Ag-B29"/>
@@ -124,10 +92,8 @@
         </view>
     </objects>
     <resources>
-        <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
         <image name="PoeticaDelRegreso" width="2560" height="1707"/>
-        <image name="ticket.fill" catalog="system" width="128" height="84"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
