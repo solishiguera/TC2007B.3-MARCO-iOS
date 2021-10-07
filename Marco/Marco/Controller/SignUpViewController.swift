@@ -121,7 +121,7 @@ class SignUpViewController: UIViewController {
                     print("Usuario registrado \(result?.user.uid ?? "")")
                     let db = Firestore.firestore()
 
-                    db.collection("users").addDocument(data: ["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
+                    db.collection("users").document(result!.user.uid).setData(["nombres" : nombre, "apellidoUno" : apellidoP, "apellidoDos" : apellidoM, "uid" : result!.user.uid]) { error in
                         if error != nil {
                             self.labelTop.text = "Error en DB"
                         } else {

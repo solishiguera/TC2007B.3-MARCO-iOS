@@ -6,16 +6,30 @@
 //
 
 import UIKit
+import Firebase
 
 class HomeViewController: UIViewController {
     
     @IBOutlet var bttnComprarBoletos: UIButton!
     @IBOutlet var bttnMenu: UIButton!
+    @IBOutlet weak var tag: UILabel!
+    
+    let user = Auth.auth().currentUser
+    let db = Firestore.firestore()
+    
+    
     override func viewDidLoad() {
+        let uid : String = user!.uid
+
         super.viewDidLoad()
         bttnComprarBoletos.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        db.collection("users").document(uid).getDocument{(doc, error) in
+            let name = doc?.get("nombres")
+            self.tag.text = name as? String
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
