@@ -21,8 +21,13 @@ class TabBarViewController: UITabBarController {
             tag: 1)
         
         exposicionViewController.tabBarItem = UITabBarItem(
-            title: "Exposicion",
-            image: UIImage(systemName: "house"),
+            title: "Exposiciones",
+            image: UIImage(systemName: "paintbrush"),
+            tag: 2)
+        
+        exposicionViewController.tabBarItem = UITabBarItem(
+            title: "Exposiciones",
+            image: UIImage(systemName: "paintbrush"),
             tag: 2)
         
         self.viewControllers = controllers

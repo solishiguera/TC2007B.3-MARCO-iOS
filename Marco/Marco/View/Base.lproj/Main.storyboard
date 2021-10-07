@@ -170,7 +170,7 @@
                         <viewLayoutGuide key="safeArea" id="xzR-9C-92B"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="bDH-ql-DSb"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="paint" id="bDH-ql-DSb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duv-HB-BZI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -220,6 +220,7 @@
     <resources>
         <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
+        <image name="paint" width="128" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
