@@ -14,6 +14,10 @@
 		19A1DCA026E8F0B9003F88D0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */; };
 		19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DCA226E90C0B003F88D0 /* Extensions.swift */; };
 		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
+		44116959270E7F5000572772 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116957270E7F5000572772 /* TicketViewController.swift */; };
+		4411695A270E7F5000572772 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44116958270E7F5000572772 /* TicketViewController.xib */; };
+		4411695D270E7F8700572772 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411695B270E7F8700572772 /* RestaurantViewController.swift */; };
+		4411695E270E7F8700572772 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4411695C270E7F8700572772 /* RestaurantViewController.xib */; };
 		44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */; };
 		44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */; };
 		44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE626E6DB0A00BF42F8 /* ViewController.swift */; };
@@ -61,6 +65,10 @@
 		19CA0D5324FB0D70B3102A98 /* Pods-Marco-MarcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
 		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		44116957270E7F5000572772 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		44116958270E7F5000572772 /* TicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
+		4411695B270E7F8700572772 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		4411695C270E7F8700572772 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		44288BDF26E6DB0A00BF42F8 /* Marco.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marco.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +224,8 @@
 				443BE9CF26E8EB3000C406DE /* HomeViewController.xib */,
 				49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */,
 				19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */,
+				44116958270E7F5000572772 /* TicketViewController.xib */,
+				4411695C270E7F8700572772 /* RestaurantViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -229,6 +239,8 @@
 				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
 				19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */,
 				44116955270DEA3100572772 /* TabBarViewController.swift */,
+				44116957270E7F5000572772 /* TicketViewController.swift */,
+				4411695B270E7F8700572772 /* RestaurantViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +355,8 @@
 			files = (
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
 				44288BEC26E6DB0D00BF42F8 /* Assets.xcassets in Resources */,
+				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
+				4411695E270E7F8700572772 /* RestaurantViewController.xib in Resources */,
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
 				19A1DCA026E8F0B9003F88D0 /* MenuViewController.xib in Resources */,
 				19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */,
@@ -482,8 +496,10 @@
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
 				19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */,
+				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
 				49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
+				4411695D270E7F8700572772 /* RestaurantViewController.swift in Sources */,
 				443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
