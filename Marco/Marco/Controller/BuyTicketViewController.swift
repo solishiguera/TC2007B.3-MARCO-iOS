@@ -15,7 +15,7 @@ class BuyTicketViewController: UIViewController, WKNavigationDelegate {
         super.viewDidLoad()
         webView.navigationDelegate = self
                 
-        let url = URL(string: "http://factura.marco.org.mx/tickets_marco/validar_usuario.aspx")!
+        let url = URL(string: "https://factura.marco.org.mx/tickets_marco/")!
         webView.load(URLRequest(url: url))
 
         // Do any additional setup after loading the view.
