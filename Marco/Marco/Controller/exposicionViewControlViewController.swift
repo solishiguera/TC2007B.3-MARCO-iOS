@@ -7,42 +7,51 @@
 
 import UIKit
 
-class exposicionViewControlViewController: UIViewController {
+class exposicionViewControlViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet var bttnMenu: UIButton!
-    @IBOutlet var bttnBoletos: UIButton!
+    var expositions: [Exposition] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewWillDisappear(false)
-        // Do any additional setup after loading the view.
-        viewWillDisappear(false)
+        print("Loaded")
+        tableView.dataSource = self
+        tableView.delegate = self
+        fetchData()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    
+    func fetchData() {
+        NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/expositions", method: .get, parameters: nil, stringParameters: nil) { (event: ExpositionRequest?, error) in
+            if error != nil {
+                print(error ?? "Error al hacer request")
+            } else {
+                guard let expositions = event?.expositions else { return }
+                self.expositions = expositions
+                self.tableView.reloadData()
+            }
     }
-
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-
-    @IBAction func bttnMenuPressed(_ sender: Any) {
-        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
-        
-        self.present(menuViewController, animated: true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        expositions.count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "expoCell")
+        let exposition = expositions[indexPath.row]
+        cell.textLabel?.text = exposition.title
+        cell.detailTextLabel?.text = exposition.startDate
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = ExpoDetailsViewController(nibName: "ExpoDetailsViewController", bundle: nil)
+        vc.expo = expositions[indexPath.row]
+        present(vc, animated: true, completion: nil)
+    }
+    
+    
+    
 }
