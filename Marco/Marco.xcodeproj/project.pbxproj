@@ -28,6 +28,8 @@
 		44288C0526E6DB0D00BF42F8 /* MarcoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288C0426E6DB0D00BF42F8 /* MarcoUITests.swift */; };
 		443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443BE9CE26E8EB3000C406DE /* HomeViewController.swift */; };
 		443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443BE9CF26E8EB3000C406DE /* HomeViewController.xib */; };
+		44913864270FCAD600E84F6A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913863270FCAD600E84F6A /* Network.swift */; };
+		44913867270FCB4800E84F6A /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913866270FCB4800E84F6A /* Exposition.swift */; };
 		49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */; };
 		49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */; };
 		87AF10C18AD4A35068B15829 /* Pods_Marco_MarcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */; };
@@ -87,6 +89,8 @@
 		44288C0626E6DB0D00BF42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		443BE9CE26E8EB3000C406DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		443BE9CF26E8EB3000C406DE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		44913863270FCAD600E84F6A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		44913866270FCB4800E84F6A /* Exposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposition.swift; sourceTree = "<group>"; };
 		49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionViewControlViewController.swift; sourceTree = "<group>"; };
 		49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exposicionViewControlViewController.xib; sourceTree = "<group>"; };
 		51C62C55EE3859E90BC96A39 /* Pods-MarcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.release.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				19A1DCA226E90C0B003F88D0 /* Extensions.swift */,
+				44913863270FCAD600E84F6A /* Network.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			children = (
 				44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */,
 				44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */,
+				44913866270FCB4800E84F6A /* Exposition.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44913864270FCAD600E84F6A /* Network.swift in Sources */,
 				44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */,
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
@@ -505,6 +512,7 @@
 				19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
 				49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */,
+				44913867270FCB4800E84F6A /* Exposition.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
 				4411695D270E7F8700572772 /* RestaurantViewController.swift in Sources */,
 				443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */,
