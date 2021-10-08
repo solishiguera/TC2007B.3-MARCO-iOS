@@ -7,20 +7,14 @@
 
 import Foundation
 
-struct ExpositionRequest: Codable {
-    let results: [Exposition]
+struct ExpositionRequest: Decodable {
+    let expositions: [Exposition]
 }
 
-struct Exposition: Codable {
-    let id: String
-    let title: String
-    let startDate: String
-    let description: String
-    let cerraduria: String
-    let museografia: String
-    let salas: String
-    let tecnica: String
-    let obras: String
-    let recorridoVirtual: String
-    let videoUrl: String
+struct Exposition: Decodable {
+    let id, title, startDate, description: String?
+    let cerraduria, museografia, salas, tecnica: String?
+    let obras: String?
+    let recorridoVirtual: String?
+    let videoURL: String?
 }
