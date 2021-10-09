@@ -59,10 +59,12 @@ Monterrey, N.L., México. 64000</string>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-Xg-Ytl">
                             <rect key="frame" x="157.66666666666666" y="624" width="98.666666666666657" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                            <buttonConfiguration key="configuration" style="tinted" titleAlignment="center">
                                 <backgroundConfiguration key="background">
-                                    <color key="backgroundColor" red="0.99607843137254903" green="0.20392156862745098" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </backgroundConfiguration>
                                 <attributedString key="attributedTitle">
                                     <fragment content="MENÚ">
@@ -81,6 +83,7 @@ Monterrey, N.L., México. 64000</string>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
+                                <color key="baseBackgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </buttonConfiguration>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martes a domingo. De 1:00 a 4:00 pm." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-gB-OKP">

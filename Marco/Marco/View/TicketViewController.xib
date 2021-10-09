@@ -21,14 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_code_for_mobile_English_Wikipedia" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-lJ-cFR">
-                    <rect key="frame" x="87" y="74" width="240" height="240"/>
+                    <rect key="frame" x="87" y="328" width="240" height="240"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="pV1-rC-eNH"/>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="uPe-wR-y1H"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-rs-KKa">
-                    <rect key="frame" x="70.5" y="344" width="273" height="65"/>
+                    <rect key="frame" x="70.5" y="581" width="273" height="65"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="07W-vz-eU0"/>
@@ -44,19 +44,33 @@
                         <action selector="comprarBoleto:" destination="-1" eventType="touchUpInside" id="aPG-RI-9hh"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boletos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-ij-kAk">
+                    <rect key="frame" x="147" y="192" width="120" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-9G-ErF">
+                    <rect key="frame" x="63" y="100" width="288" height="53"/>
+                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4qL-Z7-wzm"/>
-                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9XX-Xl-Nj1"/>
-                <constraint firstItem="sKO-lJ-cFR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="TkA-hN-V4h"/>
-                <constraint firstItem="ckf-rs-KKa" firstAttribute="top" secondItem="sKO-lJ-cFR" secondAttribute="bottom" constant="30" id="ukR-BR-2hy"/>
+                <constraint firstItem="GbN-9G-ErF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-321.5" id="264-87-KCj"/>
+                <constraint firstItem="Qk1-ij-kAk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3n7-hl-LIv"/>
+                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="165.5" id="BtI-1p-nMh"/>
+                <constraint firstItem="GbN-9G-ErF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I7t-g1-HrT"/>
+                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TCX-Fp-vth"/>
+                <constraint firstItem="Qk1-ij-kAk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-235.5" id="bUd-z8-61B"/>
+                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ehC-RO-0yO"/>
+                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vF5-Ey-5aC"/>
             </constraints>
             <point key="canvasLocation" x="-145" y="50"/>
         </view>
     </objects>
     <resources>
+        <image name="Logo-Negro" width="288" height="53"/>
         <image name="QR_code_for_mobile_English_Wikipedia" width="1200" height="1200"/>
         <image name="ticket.fill" catalog="system" width="128" height="84"/>
     </resources>

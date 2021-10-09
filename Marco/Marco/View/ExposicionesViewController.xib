@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,12 +21,18 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RVk-KU-k0f">
                     <rect key="frame" x="0.0" y="208" width="414" height="618"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </tableView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="L9c-Pa-Ywa">
                     <rect key="frame" x="87" y="44" width="240" height="128"/>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exposiciones" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACV-J5-xx0">
+                    <rect key="frame" x="103.5" y="159" width="209.5" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -37,6 +42,8 @@
                 <constraint firstItem="L9c-Pa-Ywa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="87" id="JeI-ge-C9m"/>
                 <constraint firstItem="RVk-KU-k0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="M3v-dq-xr6"/>
                 <constraint firstItem="L9c-Pa-Ywa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="NF6-RR-U8a"/>
+                <constraint firstItem="ACV-J5-xx0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="1" id="jld-eZ-Iim"/>
+                <constraint firstItem="ACV-J5-xx0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-268.5" id="mn8-qs-lCc"/>
                 <constraint firstItem="RVk-KU-k0f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="164" id="p9X-2s-tWv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="L9c-Pa-Ywa" secondAttribute="bottom" constant="690" id="ulg-Sv-7cn"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RVk-KU-k0f" secondAttribute="bottom" constant="36" id="vBG-GE-Hzu"/>
@@ -46,8 +53,5 @@
     </objects>
     <resources>
         <image name="Logo-Negro" width="288" height="53"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
