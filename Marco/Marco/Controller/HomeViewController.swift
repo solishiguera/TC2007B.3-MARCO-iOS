@@ -53,12 +53,6 @@ class HomeViewController: UIViewController {
         view.endEditing(true)
     }
 
-    @IBAction func bttnMenuPressed(_ sender: Any) {
-        let menuViewController = MenuViewController(nibName: "MenuViewController", bundle: nil)
-        
-        self.present(menuViewController, animated: true, completion: nil)
-    }
-    
     @IBAction func comprarBoleto(_ sender: Any) {
         let buyTicketViewController = BuyTicketViewController(nibName: "BuyTicketViewController", bundle: nil)
         

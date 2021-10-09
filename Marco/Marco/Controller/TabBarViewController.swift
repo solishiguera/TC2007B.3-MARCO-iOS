@@ -12,7 +12,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let homeViewController = HomeViewController(nibName: "HomeViewController", bundle: nil)
-        let exposicionViewController = exposicionViewControlViewController(nibName: "exposicionViewControlViewController", bundle: nil)
+        let exposicionViewController = ExposicionesViewController(nibName: "ExposicionesViewController", bundle: nil)
         let ticketViewController = TicketViewController(nibName: "TicketViewController", bundle: nil)
         let restaurantViewController = RestaurantViewController(nibName: "RestaurantViewController", bundle: nil)
         

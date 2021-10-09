@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExpoDetailsViewController" customModule="Marco" customModuleProvider="target">
             <connections>
-                <outlet property="startDate" destination="Ejn-uA-vMi" id="He3-o9-5sf"/>
-                <outlet property="titleLbl" destination="7oO-7Y-PTu" id="syX-OE-xaz"/>
+                <outlet property="startDate" destination="Ejn-uA-vMi" id="Rnr-0G-NsH"/>
+                <outlet property="titleLbl" destination="7oO-7Y-PTu" id="Zhc-G7-oRZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,14 +21,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7oO-7Y-PTu" userLabel="titleLbl">
-                    <rect key="frame" x="191" y="83" width="32" height="17"/>
+                    <rect key="frame" x="48" y="87" width="32" height="17"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="startDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejn-uA-vMi">
-                    <rect key="frame" x="163" y="246" width="72" height="25"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="startDate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejn-uA-vMi">
+                    <rect key="frame" x="48" y="194" width="72" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -36,13 +37,6 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Ejn-uA-vMi" secondAttribute="bottom" constant="591" id="4O3-1P-VnQ"/>
-                <constraint firstItem="Ejn-uA-vMi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="163" id="AoC-o5-5Xr"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Ejn-uA-vMi" secondAttribute="trailing" constant="179" id="Pqe-jH-kaJ"/>
-                <constraint firstItem="Ejn-uA-vMi" firstAttribute="top" secondItem="7oO-7Y-PTu" secondAttribute="bottom" constant="146" id="Ygh-ve-6nB"/>
-                <constraint firstItem="Ejn-uA-vMi" firstAttribute="top" secondItem="7oO-7Y-PTu" secondAttribute="bottom" constant="146" id="p5q-g6-SdH"/>
-            </constraints>
             <point key="canvasLocation" x="-123.18840579710145" y="-280.58035714285711"/>
         </view>
     </objects>

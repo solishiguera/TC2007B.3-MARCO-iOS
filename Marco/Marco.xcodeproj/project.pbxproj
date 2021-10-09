@@ -10,9 +10,9 @@
 		0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0816469C26E8AAFE0008FDD4 /* GoogleService-Info.plist */; };
 		19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */; };
 		19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */; };
-		19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */; };
-		19A1DCA026E8F0B9003F88D0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */; };
 		19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DCA226E90C0B003F88D0 /* Extensions.swift */; };
+		19F15E0B2710EE48002AC666 /* ExposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F15E092710EE48002AC666 /* ExposicionesViewController.swift */; };
+		19F15E0C2710EE48002AC666 /* ExposicionesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */; };
 		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
 		44116959270E7F5000572772 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116957270E7F5000572772 /* TicketViewController.swift */; };
 		4411695A270E7F5000572772 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44116958270E7F5000572772 /* TicketViewController.xib */; };
@@ -32,8 +32,6 @@
 		44913867270FCB4800E84F6A /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913866270FCB4800E84F6A /* Exposition.swift */; };
 		4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */; };
 		4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */; };
-		49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */; };
-		49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */; };
 		87AF10C18AD4A35068B15829 /* Pods_Marco_MarcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */; };
 		AD18A1E3C3735259A7C0E6CF /* Pods_Marco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */; };
 		C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423C38C270E896C009B73EA /* BuyTicketViewController.swift */; };
@@ -65,10 +63,10 @@
 		135D0D3B9B52C162303ED0AA /* Pods_MarcoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
-		19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		19A1DCA226E90C0B003F88D0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		19CA0D5324FB0D70B3102A98 /* Pods-Marco-MarcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		19F15E092710EE48002AC666 /* ExposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExposicionesViewController.swift; path = Marco/Controller/ExposicionesViewController.swift; sourceTree = SOURCE_ROOT; };
+		19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExposicionesViewController.xib; path = Marco/View/ExposicionesViewController.xib; sourceTree = SOURCE_ROOT; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
 		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		44116957270E7F5000572772 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
@@ -95,8 +93,6 @@
 		44913866270FCB4800E84F6A /* Exposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposition.swift; sourceTree = "<group>"; };
 		44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoDetailsViewController.swift; sourceTree = "<group>"; };
 		44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpoDetailsViewController.xib; sourceTree = "<group>"; };
-		49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionViewControlViewController.swift; sourceTree = "<group>"; };
-		49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = exposicionViewControlViewController.xib; sourceTree = "<group>"; };
 		51C62C55EE3859E90BC96A39 /* Pods-MarcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.release.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.release.xcconfig"; sourceTree = "<group>"; };
 		6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marco.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EED6801775C167CD6EED634 /* Pods-MarcoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.debug.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,11 +233,10 @@
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
 				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
 				443BE9CF26E8EB3000C406DE /* HomeViewController.xib */,
-				49D3FED726E8E8DB0085A20D /* exposicionViewControlViewController.xib */,
-				19A1DC9E26E8F0B9003F88D0 /* MenuViewController.xib */,
 				44116958270E7F5000572772 /* TicketViewController.xib */,
 				4411695C270E7F8700572772 /* RestaurantViewController.xib */,
 				44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */,
+				19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -253,11 +248,10 @@
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
 				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
-				49D3FED626E8E8DB0085A20D /* exposicionViewControlViewController.swift */,
-				19A1DC9D26E8F0B9003F88D0 /* MenuViewController.swift */,
 				44116955270DEA3100572772 /* TabBarViewController.swift */,
 				44116957270E7F5000572772 /* TicketViewController.swift */,
 				4411695B270E7F8700572772 /* RestaurantViewController.swift */,
+				19F15E092710EE48002AC666 /* ExposicionesViewController.swift */,
 				44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */,
 			);
 			path = Controller;
@@ -377,12 +371,11 @@
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
 				4411695E270E7F8700572772 /* RestaurantViewController.xib in Resources */,
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
-				19A1DCA026E8F0B9003F88D0 /* MenuViewController.xib in Resources */,
 				4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */,
 				19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */,
-				49D3FED926E8E8DB0085A20D /* exposicionViewControlViewController.xib in Resources */,
 				443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */,
 				44288BEA26E6DB0A00BF42F8 /* Main.storyboard in Resources */,
+				19F15E0C2710EE48002AC666 /* ExposicionesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,12 +509,11 @@
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
-				19A1DC9F26E8F0B9003F88D0 /* MenuViewController.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
-				49D3FED826E8E8DB0085A20D /* exposicionViewControlViewController.swift in Sources */,
 				44913867270FCB4800E84F6A /* Exposition.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
+				19F15E0B2710EE48002AC666 /* ExposicionesViewController.swift in Sources */,
 				4411695D270E7F8700572772 /* RestaurantViewController.swift in Sources */,
 				443BE9D026E8EB3000C406DE /* HomeViewController.swift in Sources */,
 				C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */,
