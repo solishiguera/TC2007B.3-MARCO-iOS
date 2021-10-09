@@ -24,23 +24,27 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="CWs-Tt-EiO">
-                            <rect key="frame" x="63" y="59" width="288" height="53"/>
+                            <rect key="frame" x="76.666666666666686" y="44" width="261" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="261" id="5Di-7i-4ob"/>
+                                <constraint firstAttribute="height" constant="50" id="wJ6-dd-GNh"/>
+                            </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurante" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1I-8u-sZe">
-                            <rect key="frame" x="110.33333333333333" y="129" width="193.33333333333337" height="40.666666666666657"/>
+                            <rect key="frame" x="0.0" y="109.00000000000001" width="414" height="40.666666666666671"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                             <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="TIq-eo-p5m">
-                            <rect key="frame" x="0.0" y="205" width="414" height="288"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Restaurant" translatesAutoresizingMaskIntoConstraints="NO" id="TIq-eo-p5m">
+                            <rect key="frame" x="0.0" y="185" width="414" height="288"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="288" id="vVw-ex-F6U"/>
                                 <constraint firstAttribute="width" constant="414" id="yEj-11-xKW"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEI-0G-gKG">
-                            <rect key="frame" x="95.666666666666686" y="501.00000000000006" width="223" height="76.666666666666686"/>
+                            <rect key="frame" x="95.666666666666686" y="481.00000000000006" width="223" height="76.666666666666686"/>
                             <string key="text">Mexicano
 Contemporáneo
 </string>
@@ -49,8 +53,8 @@ Contemporáneo
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYA-NU-bEj">
-                            <rect key="frame" x="57.666666666666657" y="681" width="298.66666666666674" height="79"/>
-                            <string key="text">DIRECCIÓN
+                            <rect key="frame" x="57.666666666666657" y="661" width="298.66666666666674" height="79"/>
+                            <string key="text">Dirección
 Zuazua y Jardón S/N, Centro.
 Monterrey, N.L., México. 64000</string>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -58,7 +62,7 @@ Monterrey, N.L., México. 64000</string>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS6-Xg-Ytl">
-                            <rect key="frame" x="157.66666666666666" y="624" width="98.666666666666657" height="50"/>
+                            <rect key="frame" x="157.66666666666666" y="604" width="98.666666666666657" height="50"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
                                 <backgroundConfiguration key="background">
@@ -84,7 +88,7 @@ Monterrey, N.L., México. 64000</string>
                             </buttonConfiguration>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martes a domingo. De 1:00 a 4:00 pm." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZc-gB-OKP">
-                            <rect key="frame" x="26" y="585" width="362.33333333333331" height="26.333333333333371"/>
+                            <rect key="frame" x="26" y="565" width="362.33333333333331" height="26.333333333333371"/>
                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -94,16 +98,18 @@ Monterrey, N.L., México. 64000</string>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.92941176469999998" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstItem="mEI-0G-gKG" firstAttribute="top" secondItem="TIq-eo-p5m" secondAttribute="bottom" constant="8" id="0BT-xw-IR2"/>
-                        <constraint firstItem="CWs-Tt-EiO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Eal-sC-dcR"/>
+                        <constraint firstItem="TIq-eo-p5m" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="6d2-I1-MPm"/>
+                        <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="I1I-8u-sZe" secondAttribute="trailing" id="8Z1-Dj-pUh"/>
                         <constraint firstItem="BYA-NU-bEj" firstAttribute="top" secondItem="SS6-Xg-Ytl" secondAttribute="bottom" constant="7" id="K65-Sa-uFQ"/>
-                        <constraint firstItem="CWs-Tt-EiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="O15-4z-hRf"/>
                         <constraint firstItem="bZc-gB-OKP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OsV-6Y-KEf"/>
                         <constraint firstItem="BYA-NU-bEj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="STl-MF-EnC"/>
-                        <constraint firstItem="I1I-8u-sZe" firstAttribute="top" secondItem="CWs-Tt-EiO" secondAttribute="bottom" constant="17" id="VSs-Aa-xEV"/>
+                        <constraint firstItem="I1I-8u-sZe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Suv-Er-0XD"/>
+                        <constraint firstItem="I1I-8u-sZe" firstAttribute="top" secondItem="CWs-Tt-EiO" secondAttribute="bottom" constant="15" id="VSs-Aa-xEV"/>
                         <constraint firstItem="mEI-0G-gKG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XxX-L2-ULM"/>
-                        <constraint firstItem="CWs-Tt-EiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="bF3-Ru-OfY"/>
                         <constraint firstItem="SS6-Xg-Ytl" firstAttribute="top" secondItem="bZc-gB-OKP" secondAttribute="bottom" constant="12.67" id="g88-Wn-I3z"/>
                         <constraint firstItem="SS6-Xg-Ytl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h9p-dP-ioE"/>
+                        <constraint firstItem="CWs-Tt-EiO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iml-9S-RUt"/>
+                        <constraint firstItem="CWs-Tt-EiO" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="txM-8Q-SWY"/>
                         <constraint firstItem="bZc-gB-OKP" firstAttribute="top" secondItem="mEI-0G-gKG" secondAttribute="bottom" constant="7.3300000000000001" id="v09-Pd-ZdH"/>
                         <constraint firstItem="I1I-8u-sZe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wNM-sU-o9O"/>
                         <constraint firstItem="TIq-eo-p5m" firstAttribute="top" secondItem="I1I-8u-sZe" secondAttribute="bottom" constant="35.329999999999998" id="wbe-BL-kRR"/>

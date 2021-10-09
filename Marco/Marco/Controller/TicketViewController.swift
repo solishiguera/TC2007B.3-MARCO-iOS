@@ -12,7 +12,7 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var comprarBoletoBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.setNavigationBarHidden(false, animated: false)
         // Do any additional setup after loading the view.
     }
 

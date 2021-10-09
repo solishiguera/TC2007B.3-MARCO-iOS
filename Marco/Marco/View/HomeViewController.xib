@@ -61,7 +61,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="LNz-Z4-MYT">
-                    <rect key="frame" x="20" y="65" width="261" height="50"/>
+                    <rect key="frame" x="83.666666666666686" y="65" width="261" height="50"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="261" id="aP0-pd-IJj"/>
                         <constraint firstAttribute="height" constant="50" id="fWD-VF-fvL"/>
@@ -87,15 +87,15 @@
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="top" secondItem="bWp-WG-AuZ" secondAttribute="bottom" constant="4" id="6JQ-hY-Tpp"/>
                 <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="7Wb-zc-gNy"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="50" id="9xw-Ex-dJa"/>
+                <constraint firstItem="LNz-Z4-MYT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bm6-jf-KHr"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DYy-Y9-TkF"/>
-                <constraint firstItem="LNz-Z4-MYT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-63.5" id="JlE-gt-C4u"/>
                 <constraint firstItem="b1D-ct-ylS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-373.5" id="Oep-wi-2Ea"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="8.9999999999999858" id="T70-GN-uPQ"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="Tfg-HO-eLs"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZdE-Lp-Nn4"/>
                 <constraint firstItem="b1D-ct-ylS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="170.16999999999999" id="bKB-8d-MDs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" id="e95-aL-9hi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="b1D-ct-ylS" secondAttribute="trailing" constant="20" id="gE7-4K-Lea"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="b1D-ct-ylS" secondAttribute="trailing" constant="20" id="gE7-4K-Lea"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gnQ-Rf-a7x"/>
             </constraints>
             <point key="canvasLocation" x="137.38317757009344" y="77.105831533477328"/>

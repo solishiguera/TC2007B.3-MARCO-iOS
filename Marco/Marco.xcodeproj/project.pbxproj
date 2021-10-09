@@ -228,7 +228,6 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
 				44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */,
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
 				19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */,
@@ -237,6 +236,7 @@
 				4411695C270E7F8700572772 /* RestaurantViewController.xib */,
 				44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */,
 				19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */,
+				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
