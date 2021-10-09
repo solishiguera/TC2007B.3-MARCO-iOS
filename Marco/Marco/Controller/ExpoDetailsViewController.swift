@@ -10,8 +10,8 @@ import UIKit
 class ExpoDetailsViewController: UIViewController {
     var expo: Exposition!
 
-    @IBOutlet var titleLbl: UILabel!
-    @IBOutlet var startDate: UILabel!
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var startDate: UILabel!
     
     
     override func viewDidLoad() {

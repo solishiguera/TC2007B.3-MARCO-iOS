@@ -8,30 +8,32 @@
 import UIKit
 
 class exposicionViewControlViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
-    @IBOutlet weak var tableView: UITableView!
-    
     var expositions: [Exposition] = []
-    
+    @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         print("Loaded")
         tableView.dataSource = self
         tableView.delegate = self
-        fetchData()
+        loadExpos();
     }
     
     
-    func fetchData() {
-        NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/expositions", method: .get, parameters: nil, stringParameters: nil) { (event: ExpositionRequest?, error) in
-            if error != nil {
-                print(error ?? "Error al hacer request")
-            } else {
-                guard let expositions = event?.expositions else { return }
-                self.expositions = expositions
-                self.tableView.reloadData()
+    private func loadExpos() { //This function retrieves information in a JSON format from the server
+        let url = URL(string: "https://pacific-inlet-83178.herokuapp.com/expositions")!
+
+        URLSession.shared.dataTask(with: url, completionHandler: {[unowned self] data, response, error in
+            if let error = error { print(error); return }
+            do {
+                self.expositions = try JSONDecoder().decode([Exposition].self, from: data!)
+                print(self.expositions)
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            } catch {
+                print(error)
             }
-    }
+        }).resume()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

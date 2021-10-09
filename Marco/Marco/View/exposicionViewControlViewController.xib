@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="exposicionViewControlViewController" customModule="Marco" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="ZR0-Gi-Twd" id="PYK-zK-Rx1"/>
+                <outlet property="view" destination="xF1-YB-cfo" id="mqH-ue-Bgh"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -52,6 +52,9 @@
                     <constraint firstItem="w9E-go-jp6" firstAttribute="top" secondItem="LDw-ST-sWx" secondAttribute="top" constant="15" id="lXM-QA-SE6"/>
                 </constraints>
             </view>
+            <connections>
+                <outlet property="tableView" destination="ZR0-Gi-Twd" id="5Wo-Wg-AuV"/>
+            </connections>
             <point key="canvasLocation" x="-549.27536231884062" y="-93.080357142857139"/>
         </viewController>
     </objects>
