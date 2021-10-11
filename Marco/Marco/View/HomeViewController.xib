@@ -46,10 +46,13 @@
                         <constraint firstAttribute="width" secondItem="BWQ-qi-sHg" secondAttribute="height" multiplier="107:68" id="JjA-VN-uHT"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
-                    <rect key="frame" x="78" y="636" width="273" height="65"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
+                    <rect key="frame" x="79" y="637" width="270" height="65"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="270" id="WOG-WF-bxR"/>
+                        <constraint firstAttribute="height" constant="65" id="sHc-hs-nWr"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title=" Comprar Boletos">
@@ -68,7 +71,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1D-ct-ylS">
-                    <rect key="frame" x="360.33333333333331" y="74.333333333333329" width="47.666666666666686" height="30.666666666666671"/>
+                    <rect key="frame" x="359.66666666666669" y="65" width="47.666666666666686" height="49"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="">
                         <imageReference key="image" image="rectangle.portrait.and.arrow.right" catalog="system" symbolScale="large"/>
@@ -83,8 +86,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="b1D-ct-ylS" firstAttribute="leading" secondItem="LNz-Z4-MYT" secondAttribute="trailing" constant="15" id="58e-9g-cjA"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hUZ-7W-cOu" secondAttribute="trailing" id="5cs-mR-qfd"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="top" secondItem="bWp-WG-AuZ" secondAttribute="bottom" constant="4" id="6JQ-hY-Tpp"/>
+                <constraint firstItem="q3y-I7-U4R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6XK-fw-5Pc"/>
                 <constraint firstItem="LNz-Z4-MYT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="7Wb-zc-gNy"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="top" secondItem="hUZ-7W-cOu" secondAttribute="bottom" constant="50" id="9xw-Ex-dJa"/>
                 <constraint firstItem="LNz-Z4-MYT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bm6-jf-KHr"/>
@@ -93,10 +98,10 @@
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="top" secondItem="LNz-Z4-MYT" secondAttribute="bottom" constant="8.9999999999999858" id="T70-GN-uPQ"/>
                 <constraint firstItem="bWp-WG-AuZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="Tfg-HO-eLs"/>
                 <constraint firstItem="BWQ-qi-sHg" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ZdE-Lp-Nn4"/>
-                <constraint firstItem="b1D-ct-ylS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="170.16999999999999" id="bKB-8d-MDs"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" id="e95-aL-9hi"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="b1D-ct-ylS" secondAttribute="trailing" constant="20" id="gE7-4K-Lea"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gnQ-Rf-a7x"/>
+                <constraint firstItem="b1D-ct-ylS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="s6Q-eq-7Ok"/>
+                <constraint firstItem="q3y-I7-U4R" firstAttribute="top" secondItem="BWQ-qi-sHg" secondAttribute="bottom" constant="65" id="z0Z-6d-iPC"/>
             </constraints>
             <point key="canvasLocation" x="137.38317757009344" y="77.105831533477328"/>
         </view>
