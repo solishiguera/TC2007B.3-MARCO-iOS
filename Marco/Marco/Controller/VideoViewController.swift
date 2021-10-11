@@ -19,7 +19,7 @@ class VideoViewController: UIViewController, WKNavigationDelegate {
         webView.navigationDelegate = self
                 
         
-        webView.load(URLRequest(url: url ?? "https://www.marco.org.mx/"))
+        //webView.load(URLRequest(url: url ?? "https://www.marco.org.mx/"))
         
         // Do any additional setup after loading the view.
     }

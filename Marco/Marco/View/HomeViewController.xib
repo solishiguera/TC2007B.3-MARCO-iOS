@@ -47,7 +47,7 @@
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-I7-U4R">
-                    <rect key="frame" x="79" y="637" width="270" height="65"/>
+                    <rect key="frame" x="79" y="597" width="270" height="65"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="270" id="WOG-WF-bxR"/>
@@ -101,7 +101,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bWp-WG-AuZ" secondAttribute="trailing" id="e95-aL-9hi"/>
                 <constraint firstItem="hUZ-7W-cOu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="4" id="gnQ-Rf-a7x"/>
                 <constraint firstItem="b1D-ct-ylS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="s6Q-eq-7Ok"/>
-                <constraint firstItem="q3y-I7-U4R" firstAttribute="top" secondItem="BWQ-qi-sHg" secondAttribute="bottom" constant="65" id="z0Z-6d-iPC"/>
+                <constraint firstItem="q3y-I7-U4R" firstAttribute="top" secondItem="BWQ-qi-sHg" secondAttribute="bottom" constant="25" id="z0Z-6d-iPC"/>
             </constraints>
             <point key="canvasLocation" x="137.38317757009344" y="77.105831533477328"/>
         </view>
