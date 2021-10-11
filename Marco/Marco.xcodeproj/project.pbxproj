@@ -16,7 +16,6 @@
 		440569592714851F00A540A2 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440569572714851F00A540A2 /* VideoViewController.swift */; };
 		4405695A2714851F00A540A2 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 440569582714851F00A540A2 /* VideoViewController.xib */; };
 		4405695D27148F2400A540A2 /* deletemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4405695B27148F2400A540A2 /* deletemeViewController.swift */; };
-		4405695E27148F2400A540A2 /* deletemeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4405695C27148F2400A540A2 /* deletemeViewController.xib */; };
 		4405696127148F8700A540A2 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4405695F27148F8700A540A2 /* RestaurantViewController.swift */; };
 		4405696227148F8700A540A2 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4405696027148F8700A540A2 /* RestaurantViewController.xib */; };
 		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
@@ -74,7 +73,6 @@
 		440569572714851F00A540A2 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		440569582714851F00A540A2 /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 		4405695B27148F2400A540A2 /* deletemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deletemeViewController.swift; sourceTree = "<group>"; };
-		4405695C27148F2400A540A2 /* deletemeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = deletemeViewController.xib; sourceTree = "<group>"; };
 		4405695F27148F8700A540A2 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		4405696027148F8700A540A2 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -243,7 +241,6 @@
 				19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */,
 				440569582714851F00A540A2 /* VideoViewController.xib */,
 				4405696027148F8700A540A2 /* RestaurantViewController.xib */,
-				4405695C27148F2400A540A2 /* deletemeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -381,7 +378,6 @@
 				4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */,
 				4405696227148F8700A540A2 /* RestaurantViewController.xib in Resources */,
 				19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */,
-				4405695E27148F2400A540A2 /* deletemeViewController.xib in Resources */,
 				443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */,
 				44288BEA26E6DB0A00BF42F8 /* Main.storyboard in Resources */,
 				4405695A2714851F00A540A2 /* VideoViewController.xib in Resources */,
