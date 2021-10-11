@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BuyTicketViewController" customModule="Marco" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoViewController" customModule="Marco" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="webView" destination="YeA-CH-jgb" id="IZ3-ld-bcH"/>
+                <outlet property="webView" destination="2LC-DW-ZPU" id="w9m-GC-cOp"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeA-CH-jgb">
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2LC-DW-ZPU">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <wkWebViewConfiguration key="configuration">
@@ -32,12 +32,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YeA-CH-jgb" secondAttribute="bottom" id="RBn-cT-RM7"/>
-                <constraint firstItem="YeA-CH-jgb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RYG-wA-kBE"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YeA-CH-jgb" secondAttribute="trailing" id="oLB-Gr-zIm"/>
-                <constraint firstItem="YeA-CH-jgb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zD1-EN-rBB"/>
+                <constraint firstItem="2LC-DW-ZPU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="14b-L5-6P4"/>
+                <constraint firstItem="2LC-DW-ZPU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="8WP-0Y-Owd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2LC-DW-ZPU" secondAttribute="bottom" id="GTZ-xQ-1B9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2LC-DW-ZPU" secondAttribute="trailing" id="tgx-4h-9u5"/>
             </constraints>
-            <point key="canvasLocation" x="-30" y="20"/>
+            <point key="canvasLocation" x="139" y="100"/>
         </view>
     </objects>
     <resources>
