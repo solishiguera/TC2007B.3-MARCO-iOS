@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RVk-KU-k0f">
-                    <rect key="frame" x="0.0" y="208" width="414" height="618"/>
+                    <rect key="frame" x="0.0" y="208" width="414" height="654"/>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </tableView>
@@ -33,7 +33,6 @@
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exposiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxf-kp-Acn">
                     <rect key="frame" x="0.0" y="109" width="414" height="41"/>
-
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
                     <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
@@ -42,15 +41,15 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="L9c-Pa-Ywa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="2tq-ov-RhL"/>
-                <constraint firstAttribute="trailing" secondItem="RVk-KU-k0f" secondAttribute="trailing" id="Nai-dm-hhL"/>
-                <constraint firstItem="Kxf-kp-Acn" firstAttribute="top" secondItem="L9c-Pa-Ywa" secondAttribute="bottom" constant="15" id="SG5-zZ-UMQ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kxf-kp-Acn" secondAttribute="trailing" id="WyN-57-Lwd"/>
-                <constraint firstItem="Kxf-kp-Acn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gaR-yu-mNO"/>
-                <constraint firstItem="RVk-KU-k0f" firstAttribute="top" secondItem="Kxf-kp-Acn" secondAttribute="bottom" constant="25" id="iEm-b8-Kiu"/>
-                <constraint firstItem="L9c-Pa-Ywa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="rBC-2q-F4Y"/>
-                <constraint firstItem="RVk-KU-k0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yl4-5b-c21"/>
-
+                <constraint firstItem="Kxf-kp-Acn" firstAttribute="top" secondItem="L9c-Pa-Ywa" secondAttribute="bottom" constant="15" id="ALo-QA-umu"/>
+                <constraint firstItem="Kxf-kp-Acn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Jbi-wb-40G"/>
+                <constraint firstItem="L9c-Pa-Ywa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QU0-9D-9Py"/>
+                <constraint firstItem="Kxf-kp-Acn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ru8-Ma-4E5"/>
+                <constraint firstItem="RVk-KU-k0f" firstAttribute="top" secondItem="Kxf-kp-Acn" secondAttribute="bottom" constant="58" id="VBH-E2-WVG"/>
+                <constraint firstItem="L9c-Pa-Ywa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="brj-dc-Mem"/>
+                <constraint firstItem="RVk-KU-k0f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dXJ-Fm-Ufa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="RVk-KU-k0f" secondAttribute="bottom" id="hbq-jl-Yi2"/>
+                <constraint firstItem="RVk-KU-k0f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="nmh-SP-zSe"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="65.625"/>
         </view>
