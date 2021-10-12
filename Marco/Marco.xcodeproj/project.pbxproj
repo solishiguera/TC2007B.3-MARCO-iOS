@@ -22,7 +22,6 @@
 		44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */; };
 		44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BE626E6DB0A00BF42F8 /* ViewController.swift */; };
 		44288BEA26E6DB0A00BF42F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44288BE826E6DB0A00BF42F8 /* Main.storyboard */; };
-		44288BEC26E6DB0D00BF42F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */; };
 		44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */; };
 		44288BFA26E6DB0D00BF42F8 /* MarcoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288BF926E6DB0D00BF42F8 /* MarcoTests.swift */; };
 		44288C0526E6DB0D00BF42F8 /* MarcoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44288C0426E6DB0D00BF42F8 /* MarcoUITests.swift */; };
@@ -32,6 +31,7 @@
 		44913867270FCB4800E84F6A /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913866270FCB4800E84F6A /* Exposition.swift */; };
 		4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */; };
 		4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */; };
+		44BD516427151B3300B7F29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */; };
 		87AF10C18AD4A35068B15829 /* Pods_Marco_MarcoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */; };
 		AD18A1E3C3735259A7C0E6CF /* Pods_Marco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */; };
 		C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423C38C270E896C009B73EA /* BuyTicketViewController.swift */; };
@@ -78,7 +78,7 @@
 		44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		44288BE626E6DB0A00BF42F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		44288BE926E6DB0A00BF42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Marco/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		44288BEE26E6DB0D00BF42F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44288BF026E6DB0D00BF42F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44288BF526E6DB0D00BF42F8 /* MarcoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarcoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -367,7 +367,7 @@
 			files = (
 				C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */,
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
-				44288BEC26E6DB0D00BF42F8 /* Assets.xcassets in Resources */,
+				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
 				4411695E270E7F8700572772 /* RestaurantViewController.xib in Resources */,
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
@@ -693,7 +693,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
 				DEVELOPMENT_TEAM = HP2T576646;
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
@@ -714,7 +716,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
 				DEVELOPMENT_TEAM = HP2T576646;
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
