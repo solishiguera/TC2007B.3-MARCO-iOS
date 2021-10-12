@@ -12,6 +12,7 @@ class TicketViewController: UIViewController {
     @IBOutlet weak var comprarBoletoBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        comprarBoletoBtn.layer.cornerRadius = 5
 
         // Do any additional setup after loading the view.
     }

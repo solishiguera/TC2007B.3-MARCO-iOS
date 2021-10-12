@@ -12,7 +12,6 @@ import FirebaseAuth
 class HomeViewController: UIViewController {
     
     @IBOutlet var bttnComprarBoletos: UIButton!
-    @IBOutlet var bttnMenu: UIButton!
     @IBOutlet weak var tag: UILabel!
     
     

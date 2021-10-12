@@ -14,10 +14,12 @@
                 <outlet property="descriptionLbl" destination="Hys-5E-ykW" id="V7r-GG-Npt"/>
                 <outlet property="museografiaLbl" destination="kRo-UB-alL" id="OED-ar-GwP"/>
                 <outlet property="obrasLbl" destination="KeP-99-SZj" id="k3T-Ep-mmx"/>
+                <outlet property="recorridoBtn" destination="8Bx-Lu-WH9" id="jps-B7-4cI"/>
                 <outlet property="salasLbl" destination="RB5-Ug-A0L" id="B8J-CB-3ul"/>
                 <outlet property="startDate" destination="uLb-Pc-1Of" id="OiC-1e-sxs"/>
                 <outlet property="tecnicaLbl" destination="Qmg-C3-gka" id="glA-MC-H4Z"/>
                 <outlet property="titleLbl" destination="TYI-Gg-WQf" id="Zwq-wn-7X0"/>
+                <outlet property="videoBtn" destination="UhC-dd-jUV" id="sIa-OR-aox"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
