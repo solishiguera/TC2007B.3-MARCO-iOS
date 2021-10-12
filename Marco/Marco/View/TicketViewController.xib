@@ -20,15 +20,28 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_code_for_mobile_English_Wikipedia" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-lJ-cFR">
-                    <rect key="frame" x="87" y="328" width="240" height="240"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QR_code_for_mobile_English_Wikipedia" translatesAutoresizingMaskIntoConstraints="NO" id="sKO-lJ-cFR">
+                    <rect key="frame" x="82" y="202" width="250" height="250"/>
                     <constraints>
-                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="240" id="pV1-rC-eNH"/>
-                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="240" id="uPe-wR-y1H"/>
+                        <constraint firstAttribute="width" constant="250" id="A7r-aQ-4oe"/>
+                        <constraint firstAttribute="height" constant="250" id="PtA-j4-xMh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boletos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-ij-kAk">
+                    <rect key="frame" x="147" y="140" width="120" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-9G-ErF">
+                    <rect key="frame" x="76.5" y="65" width="261" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="pRO-DG-G5X"/>
+                        <constraint firstAttribute="width" constant="261" id="zsd-wG-5or"/>
                     </constraints>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ckf-rs-KKa">
-                    <rect key="frame" x="70.5" y="581" width="273" height="65"/>
+                    <rect key="frame" x="70.5" y="497" width="273" height="65"/>
                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="65" id="07W-vz-eU0"/>
@@ -44,27 +57,18 @@
                         <action selector="comprarBoleto:" destination="-1" eventType="touchUpInside" id="aPG-RI-9hh"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boletos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk1-ij-kAk">
-                    <rect key="frame" x="147" y="192" width="120" height="41"/>
-                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
-                    <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="GbN-9G-ErF">
-                    <rect key="frame" x="63" y="100" width="288" height="53"/>
-                </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="GbN-9G-ErF" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-321.5" id="264-87-KCj"/>
-                <constraint firstItem="Qk1-ij-kAk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3n7-hl-LIv"/>
-                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="165.5" id="BtI-1p-nMh"/>
-                <constraint firstItem="GbN-9G-ErF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="I7t-g1-HrT"/>
-                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TCX-Fp-vth"/>
-                <constraint firstItem="Qk1-ij-kAk" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-235.5" id="bUd-z8-61B"/>
-                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ehC-RO-0yO"/>
-                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vF5-Ey-5aC"/>
+                <constraint firstItem="GbN-9G-ErF" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9be-mw-atW"/>
+                <constraint firstItem="Qk1-ij-kAk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CSc-mn-Oz3"/>
+                <constraint firstItem="Qk1-ij-kAk" firstAttribute="top" secondItem="GbN-9G-ErF" secondAttribute="bottom" constant="25" id="DCw-Ml-Ymq"/>
+                <constraint firstItem="sKO-lJ-cFR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ElH-ed-l9j"/>
+                <constraint firstItem="sKO-lJ-cFR" firstAttribute="top" secondItem="Qk1-ij-kAk" secondAttribute="bottom" constant="21" id="IOb-mx-kii"/>
+                <constraint firstItem="ckf-rs-KKa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="W7K-mh-nbi"/>
+                <constraint firstItem="GbN-9G-ErF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="e4V-Wf-g7X"/>
+                <constraint firstItem="ckf-rs-KKa" firstAttribute="top" secondItem="sKO-lJ-cFR" secondAttribute="bottom" constant="45" id="ubx-Y6-izp"/>
             </constraints>
             <point key="canvasLocation" x="-145" y="50"/>
         </view>

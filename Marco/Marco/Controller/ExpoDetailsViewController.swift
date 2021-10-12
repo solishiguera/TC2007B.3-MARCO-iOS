@@ -19,7 +19,9 @@ class ExpoDetailsViewController: UIViewController {
     @IBOutlet weak var tecnicaLbl: UILabel!
     @IBOutlet weak var obrasLbl: UILabel!
     
+    @IBOutlet weak var videoBtn: UIButton!
     
+    @IBOutlet weak var recorridoBtn: UIButton!
     
     
     override func viewDidLoad() {
@@ -32,6 +34,8 @@ class ExpoDetailsViewController: UIViewController {
         salasLbl.text = expo.salas
         tecnicaLbl.text = expo.tecnica
         obrasLbl.text = expo.obras
+        videoBtn.layer.cornerRadius = 5
+        recorridoBtn.layer.cornerRadius = 5
         
         
         // Do any additional setup after loading the view.
