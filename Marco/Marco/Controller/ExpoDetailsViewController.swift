@@ -12,12 +12,27 @@ class ExpoDetailsViewController: UIViewController {
 
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var startDate: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
+    @IBOutlet weak var cerraduriaLbl: UILabel!
+    @IBOutlet weak var museografiaLbl: UILabel!
+    @IBOutlet weak var salasLbl: UILabel!
+    @IBOutlet weak var tecnicaLbl: UILabel!
+    @IBOutlet weak var obrasLbl: UILabel!
+    
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLbl.text = expo.title
         startDate.text = expo.startDate
+        descriptionLbl.text = expo.description
+        cerraduriaLbl.text = expo.cerraduria
+        museografiaLbl.text = expo.museografia
+        salasLbl.text = expo.salas
+        tecnicaLbl.text = expo.tecnica
+        obrasLbl.text = expo.obras
+        
         
         // Do any additional setup after loading the view.
     }
