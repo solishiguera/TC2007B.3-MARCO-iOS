@@ -2,16 +2,17 @@
 //  RestaurantViewController.swift
 //  Marco
 //
-//  Created by Diego Solis on 10/6/21.
+//  Created by Diego Solis on 10/11/21.
 //
 
 import UIKit
 
 class RestaurantViewController: UIViewController {
-
+    @IBOutlet weak var menuBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        menuBtn.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
     }
 
