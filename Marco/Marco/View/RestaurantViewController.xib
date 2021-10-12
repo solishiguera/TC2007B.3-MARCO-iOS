@@ -88,6 +88,7 @@ Monterrey, N.L., México. 64000</string>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstItem="8aT-2I-88p" firstAttribute="leading" secondItem="mOw-Nu-udQ" secondAttribute="leading" id="3Of-WA-XgX"/>
                                 <constraint firstItem="rtg-Ci-c6d" firstAttribute="centerX" secondItem="mOw-Nu-udQ" secondAttribute="centerX" id="3pn-QV-A2v"/>
