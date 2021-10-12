@@ -41,7 +41,31 @@ class ExpoDetailsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func VideoPress(_ sender: Any) {
+        let videoWebViewController = VideoWebViewController(nibName: "VideoWebViewController", bundle: nil)
+        
+        print("Expo Video URL")
+        print(expo.videoURL)
+        print(type(of: expo.videoURL))
+        
+        var nilcheck : String? = nil
+        var auxstr : String = "https://www.marco.org.mx/"
+        
+        
+        //auxstr = expo.videoURL!
+        
+        videoWebViewController.liga = expo.videoURL ?? "https://www.marco.org.mx/"
+        
+        //videoWebViewController.liga = auxstr
+        self.present(videoWebViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func RecorridoPressed(_ sender: Any) {
+        let recorridoWebViewController = RecorridoWebViewController(nibName: "RecorridoWebViewController", bundle: nil)
+        
+        recorridoWebViewController.liga = expo.recorridoVirtual ?? "https://www.marco.org.mx/"
+        self.present(recorridoWebViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -36,6 +36,10 @@
 		AD18A1E3C3735259A7C0E6CF /* Pods_Marco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */; };
 		C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423C38C270E896C009B73EA /* BuyTicketViewController.swift */; };
 		C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C423C38D270E896C009B73EA /* BuyTicketViewController.xib */; };
+		C4CE176E271519D0000A1C6F /* VideoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */; };
+		C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */; };
+		C4CE177B2715224C000A1C6F /* RecorridoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */; };
+		C4CE177C2715224C000A1C6F /* RecorridoWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */; };
 		D7B53E478565A829362E419E /* Pods_MarcoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 135D0D3B9B52C162303ED0AA /* Pods_MarcoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +103,10 @@
 		99DAF2EFB45A2049B9EC2FAE /* Pods-Marco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.debug.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.debug.xcconfig"; sourceTree = "<group>"; };
 		C423C38C270E896C009B73EA /* BuyTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketViewController.swift; sourceTree = "<group>"; };
 		C423C38D270E896C009B73EA /* BuyTicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyTicketViewController.xib; sourceTree = "<group>"; };
+		C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWebViewController.swift; sourceTree = "<group>"; };
+		C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoWebViewController.xib; sourceTree = "<group>"; };
+		C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoWebViewController.swift; sourceTree = "<group>"; };
+		C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecorridoWebViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +236,8 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */,
+				C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */,
 				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
 				44288BED26E6DB0D00BF42F8 /* LaunchScreen.storyboard */,
 				44288BE826E6DB0A00BF42F8 /* Main.storyboard */,
@@ -244,6 +254,8 @@
 		4484445326E6E47600361F00 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */,
+				C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */,
 				C423C38C270E896C009B73EA /* BuyTicketViewController.swift */,
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
@@ -367,9 +379,11 @@
 			files = (
 				C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */,
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
+				C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */,
 				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
+				C4CE177C2715224C000A1C6F /* RecorridoWebViewController.xib in Resources */,
 				44F22648271520560019A6E3 /* RestaurantViewController.xib in Resources */,
 				4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */,
 				19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */,
@@ -506,9 +520,11 @@
 				44913864270FCAD600E84F6A /* Network.swift in Sources */,
 				44F22647271520560019A6E3 /* RestaurantViewController.swift in Sources */,
 				44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */,
+				C4CE177B2715224C000A1C6F /* RecorridoWebViewController.swift in Sources */,
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
+				C4CE176E271519D0000A1C6F /* VideoWebViewController.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
@@ -622,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -677,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
