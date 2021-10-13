@@ -13,5 +13,5 @@ struct Exposition: Decodable{
     let cerraduria, museografia, salas, tecnica: String
     let obras: String
     let recorridoVirtual: String
-    let videoURL: String?
+    let videoUrl: String?
 }

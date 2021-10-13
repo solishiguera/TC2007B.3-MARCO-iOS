@@ -45,8 +45,8 @@ class ExpoDetailsViewController: UIViewController {
         let videoWebViewController = VideoWebViewController(nibName: "VideoWebViewController", bundle: nil)
         
         print("Expo Video URL")
-        print(expo.videoURL)
-        print(type(of: expo.videoURL))
+        print(expo.videoUrl)
+        print(type(of: expo.videoUrl))
         
         var nilcheck : String? = nil
         var auxstr : String = "https://www.marco.org.mx/"
@@ -54,7 +54,7 @@ class ExpoDetailsViewController: UIViewController {
         
         //auxstr = expo.videoURL!
         
-        videoWebViewController.liga = expo.videoURL ?? "https://www.marco.org.mx/"
+        videoWebViewController.liga = expo.videoUrl ?? "https://www.marco.org.mx/"
         
         //videoWebViewController.liga = auxstr
         self.present(videoWebViewController, animated: true, completion: nil)
