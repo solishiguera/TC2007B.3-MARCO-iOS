@@ -15,13 +15,15 @@ class TabBarViewController: UITabBarController {
         let exposicionViewController = ExposicionesViewController(nibName: "ExposicionesViewController", bundle: nil)
         let ticketViewController = TicketViewController(nibName: "TicketViewController", bundle: nil)
         let restaurantViewController = RestaurantViewController(nibName: "RestaurantViewController", bundle: nil)
+        let agendaViewController = AgendaViewController(nibName: "AgendaViewController", bundle: nil)
         
-        let controllers = [homeViewController, exposicionViewController, ticketViewController, restaurantViewController]
+        let controllers = [homeViewController, exposicionViewController, ticketViewController, restaurantViewController, agendaViewController]
         
         homeViewController.tabBarItem = UITabBarItem(
             title: "Home",
             image: UIImage(systemName: "house"),
             tag: 1)
+        
         
         restaurantViewController.tabBarItem = UITabBarItem(
             title: "Restaurante",
@@ -37,6 +39,11 @@ class TabBarViewController: UITabBarController {
             title: "Exposiciones",
             image: UIImage(systemName: "paintbrush"),
             tag: 4)
+        
+        agendaViewController.tabBarItem = UITabBarItem(
+            title: "Agenda",
+            image: UIImage(systemName: "calendar"),
+            tag: 5)
         
         UITabBar.appearance().unselectedItemTintColor = UIColor.black
         UITabBar.appearance().tintColor = UIColor(red: 0.79, green: 0.00, blue: 0.53, alpha: 1.0)
