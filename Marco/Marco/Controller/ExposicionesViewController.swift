@@ -47,8 +47,11 @@ class ExposicionesViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "expoCell")
         let expo = expositions[indexPath.row]
-        cell.textLabel?.text = expo.title
+        cell.textLabel?.text = expo.title.capitalized
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
+        cell.textLabel?.numberOfLines = 0
         cell.detailTextLabel?.text = expo.description
+        cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
