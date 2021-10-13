@@ -27,6 +27,7 @@
 		443BE9D126E8EB3000C406DE /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443BE9CF26E8EB3000C406DE /* HomeViewController.xib */; };
 		448A125227170D3200A40A6D /* AgendaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A125027170D3200A40A6D /* AgendaViewController.swift */; };
 		448A125327170D3200A40A6D /* AgendaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 448A125127170D3200A40A6D /* AgendaViewController.xib */; };
+		448A1255271724F900A40A6D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448A1254271724F900A40A6D /* Event.swift */; };
 		44913864270FCAD600E84F6A /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913863270FCAD600E84F6A /* Network.swift */; };
 		44913867270FCB4800E84F6A /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913866270FCB4800E84F6A /* Exposition.swift */; };
 		4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */; };
@@ -95,6 +96,7 @@
 		443BE9CF26E8EB3000C406DE /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		448A125027170D3200A40A6D /* AgendaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgendaViewController.swift; sourceTree = "<group>"; };
 		448A125127170D3200A40A6D /* AgendaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgendaViewController.xib; sourceTree = "<group>"; };
+		448A1254271724F900A40A6D /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		44913863270FCAD600E84F6A /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		44913866270FCB4800E84F6A /* Exposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposition.swift; sourceTree = "<group>"; };
 		44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoDetailsViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				44288BE426E6DB0A00BF42F8 /* SceneDelegate.swift */,
 				44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */,
 				44913866270FCB4800E84F6A /* Exposition.swift */,
+				448A1254271724F900A40A6D /* Event.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -534,6 +537,7 @@
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
 				C4CE176E271519D0000A1C6F /* VideoWebViewController.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
+				448A1255271724F900A40A6D /* Event.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
 				44913867270FCB4800E84F6A /* Exposition.swift in Sources */,
