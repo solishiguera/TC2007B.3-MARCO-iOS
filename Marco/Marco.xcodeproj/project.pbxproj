@@ -38,7 +38,6 @@
 		AD18A1E3C3735259A7C0E6CF /* Pods_Marco.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADA6D518AA1EC3F8B21518F /* Pods_Marco.framework */; };
 		C423C38E270E896C009B73EA /* BuyTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C423C38C270E896C009B73EA /* BuyTicketViewController.swift */; };
 		C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C423C38D270E896C009B73EA /* BuyTicketViewController.xib */; };
-		C4CE176E271519D0000A1C6F /* VideoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */; };
 		C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */; };
 		C4CE177B2715224C000A1C6F /* RecorridoWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */; };
 		C4CE177C2715224C000A1C6F /* RecorridoWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */; };
@@ -107,7 +106,6 @@
 		99DAF2EFB45A2049B9EC2FAE /* Pods-Marco.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.debug.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.debug.xcconfig"; sourceTree = "<group>"; };
 		C423C38C270E896C009B73EA /* BuyTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyTicketViewController.swift; sourceTree = "<group>"; };
 		C423C38D270E896C009B73EA /* BuyTicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyTicketViewController.xib; sourceTree = "<group>"; };
-		C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoWebViewController.swift; sourceTree = "<group>"; };
 		C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoWebViewController.xib; sourceTree = "<group>"; };
 		C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoWebViewController.swift; sourceTree = "<group>"; };
 		C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecorridoWebViewController.xib; sourceTree = "<group>"; };
@@ -260,7 +258,6 @@
 			isa = PBXGroup;
 			children = (
 				C4CE17792715224C000A1C6F /* RecorridoWebViewController.swift */,
-				C4CE176C271519D0000A1C6F /* VideoWebViewController.swift */,
 				C423C38C270E896C009B73EA /* BuyTicketViewController.swift */,
 				44288BE626E6DB0A00BF42F8 /* ViewController.swift */,
 				19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */,
@@ -532,7 +529,6 @@
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
-				C4CE176E271519D0000A1C6F /* VideoWebViewController.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
@@ -720,14 +716,14 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
-				DEVELOPMENT_TEAM = HP2T576646;
+				DEVELOPMENT_TEAM = 42A9943T9Z;
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -743,14 +739,14 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
-				DEVELOPMENT_TEAM = HP2T576646;
+				DEVELOPMENT_TEAM = 42A9943T9Z;
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

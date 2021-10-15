@@ -10,12 +10,11 @@ import WebKit
 
 class VideoWebViewController: UIViewController, WKNavigationDelegate {
     
-    var liga = "https://www.marco.org.mx/"
+    var liga = ""
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.navigationDelegate = self
-        print(liga)
         let url = URL(string: liga)!
         webView.load(URLRequest(url: url))
 
