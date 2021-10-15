@@ -19,7 +19,7 @@
                 <outlet property="startDate" destination="uLb-Pc-1Of" id="OiC-1e-sxs"/>
                 <outlet property="tecnicaLbl" destination="Qmg-C3-gka" id="glA-MC-H4Z"/>
                 <outlet property="titleLbl" destination="TYI-Gg-WQf" id="Zwq-wn-7X0"/>
-                <outlet property="videoBtn" destination="UhC-dd-jUV" id="sIa-OR-aox"/>
+                <outlet property="videoWebView" destination="rjn-LI-5Tn" id="7ht-Dw-lPc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -125,28 +125,26 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhC-dd-jUV" userLabel="video">
-                                    <rect key="frame" x="157" y="644.5" width="100" height="60"/>
-                                    <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjn-LI-5Tn">
+                                    <rect key="frame" x="8" y="632" width="398" height="240"/>
+                                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="100" id="O4o-hq-2WR"/>
-                                        <constraint firstAttribute="height" constant="60" id="zep-h5-8mp"/>
+                                        <constraint firstAttribute="height" constant="240" id="joU-SM-rl7"/>
                                     </constraints>
-                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <state key="normal" title="Video"/>
-                                    <connections>
-                                        <action selector="VideoPress:" destination="-1" eventType="touchUpInside" id="PHD-bM-dFW"/>
-                                    </connections>
-                                </button>
+                                    <wkWebViewConfiguration key="configuration">
+                                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                        <wkPreferences key="preferences"/>
+                                    </wkWebViewConfiguration>
+                                </wkWebView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bx-Lu-WH9" userLabel="recorridoVirtual">
-                                    <rect key="frame" x="157" y="719.5" width="100" height="60"/>
+                                    <rect key="frame" x="128.5" y="880" width="157" height="60"/>
                                     <color key="backgroundColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="100" id="HLR-XB-DrF"/>
+                                        <constraint firstAttribute="width" constant="157" id="HLR-XB-DrF"/>
                                         <constraint firstAttribute="height" constant="60" id="fEU-ZC-QdL"/>
                                     </constraints>
                                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <state key="normal" title="Recorrido"/>
+                                    <state key="normal" title="Recorrido  Virtual"/>
                                     <connections>
                                         <action selector="RecorridoPressed:" destination="-1" eventType="touchUpInside" id="wAr-gZ-A7v"/>
                                     </connections>
@@ -156,6 +154,7 @@
                             <constraints>
                                 <constraint firstItem="8Bx-Lu-WH9" firstAttribute="centerX" secondItem="Bwq-80-WCt" secondAttribute="centerX" id="0Sh-JS-3eH"/>
                                 <constraint firstItem="Hys-5E-ykW" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="11j-Uq-NVA"/>
+                                <constraint firstItem="8Bx-Lu-WH9" firstAttribute="top" secondItem="rjn-LI-5Tn" secondAttribute="bottom" constant="8" symbolic="YES" id="1i0-ec-Nmk"/>
                                 <constraint firstItem="Qmg-C3-gka" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="2Lk-zw-xN9"/>
                                 <constraint firstAttribute="trailing" secondItem="Qmg-C3-gka" secondAttribute="trailing" constant="4" id="2Lu-vt-Tye"/>
                                 <constraint firstItem="Xv3-i7-Tg8" firstAttribute="top" secondItem="5Ii-zw-vby" secondAttribute="bottom" constant="8" id="53R-R0-3Ez"/>
@@ -179,15 +178,15 @@
                                 <constraint firstItem="uLb-Pc-1Of" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="XHP-KB-kuv"/>
                                 <constraint firstItem="4TJ-gF-5pA" firstAttribute="centerX" secondItem="Bwq-80-WCt" secondAttribute="centerX" id="Y82-4a-jdy"/>
                                 <constraint firstItem="Xv3-i7-Tg8" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="Yad-of-7YU"/>
-                                <constraint firstItem="UhC-dd-jUV" firstAttribute="centerX" secondItem="Bwq-80-WCt" secondAttribute="centerX" id="Yca-YV-bds"/>
                                 <constraint firstItem="ntE-be-LNB" firstAttribute="top" secondItem="kRo-UB-alL" secondAttribute="bottom" constant="25" id="Zx5-zt-hTM"/>
                                 <constraint firstItem="tI4-qP-2pp" firstAttribute="top" secondItem="Qmg-C3-gka" secondAttribute="bottom" constant="25" id="acY-zV-6cx"/>
                                 <constraint firstItem="kRo-UB-alL" firstAttribute="top" secondItem="eih-Hp-Zf9" secondAttribute="bottom" constant="8" id="auw-SD-tLt"/>
                                 <constraint firstAttribute="trailing" secondItem="5Ii-zw-vby" secondAttribute="trailing" constant="4" id="d5j-po-i6C"/>
+                                <constraint firstItem="rjn-LI-5Tn" firstAttribute="top" secondItem="KeP-99-SZj" secondAttribute="bottom" constant="7.5" id="fxx-CW-5aH"/>
                                 <constraint firstAttribute="trailing" secondItem="Jxs-R4-eOo" secondAttribute="trailing" constant="4" id="gWU-if-8rX"/>
                                 <constraint firstItem="kRo-UB-alL" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="i4K-d9-T9C"/>
-                                <constraint firstItem="8Bx-Lu-WH9" firstAttribute="top" secondItem="UhC-dd-jUV" secondAttribute="bottom" constant="15" id="iZj-or-ihG"/>
                                 <constraint firstItem="4TJ-gF-5pA" firstAttribute="top" secondItem="Bwq-80-WCt" secondAttribute="top" constant="21" id="jC1-GL-ZA9"/>
+                                <constraint firstItem="rjn-LI-5Tn" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="8" id="jcV-So-bKa"/>
                                 <constraint firstItem="RB5-Ug-A0L" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="jts-Mf-FTs"/>
                                 <constraint firstAttribute="height" constant="1700" id="kac-kD-bHt"/>
                                 <constraint firstItem="Qmg-C3-gka" firstAttribute="top" secondItem="Jxs-R4-eOo" secondAttribute="bottom" constant="8" id="lt9-0e-Ihl"/>
@@ -199,7 +198,7 @@
                                 <constraint firstItem="Jxs-R4-eOo" firstAttribute="top" secondItem="RB5-Ug-A0L" secondAttribute="bottom" constant="25" id="tlw-ec-BT1"/>
                                 <constraint firstAttribute="trailing" secondItem="kRo-UB-alL" secondAttribute="trailing" constant="4" id="tma-Yw-Bvx"/>
                                 <constraint firstItem="TYI-Gg-WQf" firstAttribute="top" secondItem="4TJ-gF-5pA" secondAttribute="bottom" constant="25" id="uJK-NS-PdY"/>
-                                <constraint firstItem="UhC-dd-jUV" firstAttribute="top" secondItem="KeP-99-SZj" secondAttribute="bottom" constant="20" id="v8d-is-3OT"/>
+                                <constraint firstAttribute="trailing" secondItem="rjn-LI-5Tn" secondAttribute="trailing" constant="8" id="uZd-4j-czk"/>
                                 <constraint firstItem="RB5-Ug-A0L" firstAttribute="top" secondItem="ntE-be-LNB" secondAttribute="bottom" constant="8" id="vlE-gR-TqA"/>
                                 <constraint firstAttribute="trailing" secondItem="IuO-cV-WPn" secondAttribute="trailing" constant="4" id="w5X-Rt-OvQ"/>
                                 <constraint firstItem="ntE-be-LNB" firstAttribute="leading" secondItem="Bwq-80-WCt" secondAttribute="leading" constant="4" id="wai-o3-ych"/>

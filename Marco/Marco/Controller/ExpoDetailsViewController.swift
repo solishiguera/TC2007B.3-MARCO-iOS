@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import WebKit
 
 class ExpoDetailsViewController: UIViewController {
     var expo: Exposition!
-
+    var videoID: String!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var startDate: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
@@ -18,11 +19,10 @@ class ExpoDetailsViewController: UIViewController {
     @IBOutlet weak var salasLbl: UILabel!
     @IBOutlet weak var tecnicaLbl: UILabel!
     @IBOutlet weak var obrasLbl: UILabel!
-    
-    @IBOutlet weak var videoBtn: UIButton!
-    
+
     @IBOutlet weak var recorridoBtn: UIButton!
     
+    @IBOutlet weak var videoWebView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,46 +34,37 @@ class ExpoDetailsViewController: UIViewController {
         salasLbl.text = expo.salas
         tecnicaLbl.text = expo.tecnica
         obrasLbl.text = expo.obras
-        videoBtn.layer.cornerRadius = 5
         recorridoBtn.layer.cornerRadius = 5
-        
-        
-        // Do any additional setup after loading the view.
+        if expo.videoUrl != "" {
+            getVideo()
+        }
+        else {
+            videoWebView.isHidden = true
+        }
     }
+    
 
-    @IBAction func VideoPress(_ sender: Any) {
-        let videoWebViewController = VideoWebViewController(nibName: "VideoWebViewController", bundle: nil)
-        
-        print("Expo Video URL")
-        print(expo.videoUrl)
-        print(type(of: expo.videoUrl))
-        
-        var nilcheck : String? = nil
-        var auxstr : String = "https://www.marco.org.mx/"
-        
-        
-        //auxstr = expo.videoURL!
-        
-        videoWebViewController.liga = expo.videoUrl ?? "https://www.marco.org.mx/"
-        
-        //videoWebViewController.liga = auxstr
-        self.present(videoWebViewController, animated: true, completion: nil)
+    func getVideoID(videoUrl: String) -> [String]{
+            let regex = try! NSRegularExpression(pattern: "(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)")
+
+            let results = regex.matches(in: videoUrl,
+                                              range: NSRange(videoUrl.startIndex..., in: videoUrl))
+            return results.map {
+                      String(videoUrl[Range($0.range, in: videoUrl)!])
+            }
+                
+    }
+     
+    func getVideo(){
+        let matched = getVideoID(videoUrl: expo.videoUrl!)
+        let url = URL(string: "https://www.youtube.com/embed/\(matched[0])")
+        videoWebView.load(URLRequest(url: url!))
     }
     
     @IBAction func RecorridoPressed(_ sender: Any) {
         let recorridoWebViewController = RecorridoWebViewController(nibName: "RecorridoWebViewController", bundle: nil)
         
-        recorridoWebViewController.liga = expo.recorridoVirtual ?? "https://www.marco.org.mx/"
+        recorridoWebViewController.liga = expo.recorridoVirtual
         self.present(recorridoWebViewController, animated: true, completion: nil)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
