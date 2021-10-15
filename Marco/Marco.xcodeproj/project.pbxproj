@@ -716,14 +716,14 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
-				DEVELOPMENT_TEAM = 42A9943T9Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -739,14 +739,14 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = Marco/Assets.xcassets;
-				DEVELOPMENT_TEAM = 42A9943T9Z;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Marco/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tc2007b.Marco;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
