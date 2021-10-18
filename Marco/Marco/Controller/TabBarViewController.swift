@@ -41,7 +41,7 @@ class TabBarViewController: UITabBarController {
             tag: 4)
         
         agendaViewController.tabBarItem = UITabBarItem(
-            title: "Agenda",
+            title: "Eventos",
             image: UIImage(systemName: "calendar"),
             tag: 5)
         
