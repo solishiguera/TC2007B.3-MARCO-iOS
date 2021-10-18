@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Event {
+struct Event: Decodable {
     let id: String
     let events: [String]
     let date: String
