@@ -56,6 +56,9 @@ class AgendaViewController: UIViewController,UITableViewDelegate, UITableViewDat
         let event = events[indexPath.section].events[indexPath.row]
         let cell = UITableViewCell(style: .default, reuseIdentifier: "eventCell")
         cell.textLabel?.text = event
+        cell.textLabel?.numberOfLines = 0
+        cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
         return cell
     }
 }

@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,25 +20,44 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NJB-mh-zWo">
-                    <rect key="frame" x="0.0" y="161" width="414" height="642"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <rect key="frame" x="0.0" y="206" width="414" height="631"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="separatorColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="sectionIndexBackgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="sectionIndexTrackingBackgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 </tableView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-Negro" translatesAutoresizingMaskIntoConstraints="NO" id="jUM-C9-aco">
+                    <rect key="frame" x="76.5" y="65" width="261" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="261" id="7mS-7R-yZE"/>
+                        <constraint firstAttribute="height" constant="50" id="qhv-gp-PYN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eventos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZx-mv-ILA">
+                    <rect key="frame" x="0.0" y="140" width="414" height="41"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <color key="textColor" red="0.79215686269999996" green="0.0" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="jUM-C9-aco" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="3be-4P-rhg"/>
                 <constraint firstItem="NJB-mh-zWo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DzB-mZ-yLk"/>
-                <constraint firstItem="NJB-mh-zWo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="117" id="GgH-hh-JDF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NJB-mh-zWo" secondAttribute="bottom" constant="59" id="aet-91-WqD"/>
+                <constraint firstItem="jUM-C9-aco" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FrL-7H-qmS"/>
+                <constraint firstItem="rZx-mv-ILA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Hzt-yZ-Io8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="NJB-mh-zWo" secondAttribute="bottom" constant="25" id="aet-91-WqD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NJB-mh-zWo" secondAttribute="trailing" id="beU-Gk-FCd"/>
+                <constraint firstItem="NJB-mh-zWo" firstAttribute="top" secondItem="rZx-mv-ILA" secondAttribute="bottom" constant="25" id="koI-DF-HAR"/>
+                <constraint firstItem="rZx-mv-ILA" firstAttribute="top" secondItem="jUM-C9-aco" secondAttribute="bottom" constant="25" id="uEW-sm-i91"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rZx-mv-ILA" secondAttribute="trailing" id="woF-Hd-wbE"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="75"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Logo-Negro" width="288" height="53"/>
     </resources>
 </document>
