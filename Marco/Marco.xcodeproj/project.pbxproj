@@ -13,6 +13,7 @@
 		19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DCA226E90C0B003F88D0 /* Extensions.swift */; };
 		19F15E0B2710EE48002AC666 /* ExposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F15E092710EE48002AC666 /* ExposicionesViewController.swift */; };
 		19F15E0C2710EE48002AC666 /* ExposicionesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */; };
+		19FED4A3271DBD0400584BA0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED4A2271DBD0400584BA0 /* News.swift */; };
 		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
 		44116959270E7F5000572772 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116957270E7F5000572772 /* TicketViewController.swift */; };
 		4411695A270E7F5000572772 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44116958270E7F5000572772 /* TicketViewController.xib */; };
@@ -73,6 +74,7 @@
 		19CA0D5324FB0D70B3102A98 /* Pods-Marco-MarcoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco-MarcoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Marco-MarcoUITests/Pods-Marco-MarcoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		19F15E092710EE48002AC666 /* ExposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExposicionesViewController.swift; path = Marco/Controller/ExposicionesViewController.swift; sourceTree = SOURCE_ROOT; };
 		19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExposicionesViewController.xib; path = Marco/View/ExposicionesViewController.xib; sourceTree = SOURCE_ROOT; };
+		19FED4A2271DBD0400584BA0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
 		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		44116957270E7F5000572772 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				44288BE226E6DB0A00BF42F8 /* AppDelegate.swift */,
 				44913866270FCB4800E84F6A /* Exposition.swift */,
 				448A1254271724F900A40A6D /* Event.swift */,
+				19FED4A2271DBD0400584BA0 /* News.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -536,6 +539,7 @@
 				448A1255271724F900A40A6D /* Event.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
+				19FED4A3271DBD0400584BA0 /* News.swift in Sources */,
 				44913867270FCB4800E84F6A /* Exposition.swift in Sources */,
 				44288BE526E6DB0A00BF42F8 /* SceneDelegate.swift in Sources */,
 				19F15E0B2710EE48002AC666 /* ExposicionesViewController.swift in Sources */,
