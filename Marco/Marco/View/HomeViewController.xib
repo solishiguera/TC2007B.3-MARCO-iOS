@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Marco" customModuleProvider="target">
             <connections>
                 <outlet property="bttnComprarBoletos" destination="q3y-I7-U4R" id="eyk-ey-CBN"/>
+                <outlet property="newsTableView" destination="5b2-wD-xtf" id="UlO-14-9mb"/>
                 <outlet property="tag" destination="hUZ-7W-cOu" id="pK9-uP-je8"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -86,6 +87,11 @@
                         <action selector="logOut:" destination="-1" eventType="touchUpInside" id="f0B-Yp-6gL"/>
                     </connections>
                 </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="5b2-wD-xtf">
+                    <rect key="frame" x="8" y="677" width="413" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

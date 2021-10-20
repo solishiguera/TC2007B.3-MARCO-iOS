@@ -9,8 +9,10 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var news = [News]()
     
+    @IBOutlet weak var newsTableView: UITableView!
     @IBOutlet var bttnComprarBoletos: UIButton!
     @IBOutlet weak var tag: UILabel!
     
@@ -19,7 +21,11 @@ class HomeViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        
+        newsTableView.delegate = self
+        newsTableView.dataSource = self
+        fetchData {
+            self.newsTableView.reloadData()
+        }
 
         super.viewDidLoad()
         bttnComprarBoletos.layer.cornerRadius = 5
@@ -68,14 +74,41 @@ class HomeViewController: UIViewController {
             self.navigationController?.popViewController(animated: true)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func fetchData(completed: @escaping () -> ()) {
+        let url = URL(string: "https://pacific-inlet-83178.herokuapp.com/news")
+        
+        URLSession.shared.dataTask(with: url!) { (data, response, error) in
+            if error == nil {
+                do {
+                   try self.news = JSONDecoder().decode([News].self, from: data!)
+                    
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }.resume()
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return news.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "newCell")
+        let new = news[indexPath.row]
+        cell.textLabel?.text = new.title.capitalized
+        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
+        cell.textLabel?.numberOfLines = 0
+        cell.detailTextLabel?.text = new.description
+        cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
+        return cell
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = NewsDetailsViewController(nibName: "NewsDetailsViewController", bundle: nil)
+            vc.new = news[indexPath.row]
+        present(vc, animated: true, completion: nil)
+    }
 }

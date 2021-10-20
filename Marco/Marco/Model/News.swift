@@ -8,8 +8,8 @@
 import Foundation
 
 // MARK: - News
-struct News {
+struct News: Decodable {
     let id, title, subtitle, date: String
     let description: String
-    let imageURL: NSNull //Se puede no utilizar pues siempre es nulo
+    let imageURL: String? //Se puede no utilizar pues siempre es nulo
 }
