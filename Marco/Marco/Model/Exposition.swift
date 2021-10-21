@@ -14,4 +14,5 @@ struct Exposition: Decodable{
     let obras: String
     let recorridoVirtual: String
     let videoUrl: String?
+    let photoUrl: String
 }
