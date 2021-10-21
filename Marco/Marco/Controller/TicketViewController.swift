@@ -25,6 +25,11 @@ class TicketViewController: UIViewController {
         self.present(buyTicketViewController, animated: true, completion: nil)
     }
     
+    @IBAction func reservarVisita(_ sender: Any) {
+        let ReserveViewController = ReserveViewController(nibName: "ReserveViewController", bundle: nil)
+        
+        self.present(ReserveViewController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

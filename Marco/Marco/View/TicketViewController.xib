@@ -72,7 +72,7 @@
                         <imageReference key="image" image="person.fill" catalog="system" symbolScale="large"/>
                     </state>
                     <connections>
-                        <action selector="comprarBoleto:" destination="-1" eventType="touchUpInside" id="LHH-ef-zUD"/>
+                        <action selector="reservarVisita:" destination="-1" eventType="touchUpInside" id="whG-RZ-SW9"/>
                     </connections>
                 </button>
             </subviews>
