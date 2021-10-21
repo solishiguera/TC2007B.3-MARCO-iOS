@@ -84,12 +84,6 @@
                                     <action selector="guestBttnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="28r-2g-083"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Términos y condiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnN-1w-PC7">
-                                <rect key="frame" x="0.0" y="731" width="390" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <color key="textColor" systemColor="linkColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Contraseña" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jT4-lt-P9K">
                                 <rect key="frame" x="22.666666666666657" y="302.33333333333331" width="345" height="60"/>
                                 <constraints>
@@ -113,9 +107,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.95294117647058818" green="0.92156862745098034" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="rnN-1w-PC7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9eF-PF-qBg"/>
-                            <constraint firstAttribute="bottom" secondItem="rnN-1w-PC7" secondAttribute="bottom" constant="90" id="9hV-gL-ecc"/>
-                            <constraint firstItem="rnN-1w-PC7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B0W-iI-WwR"/>
                             <constraint firstItem="lmh-z0-Dc2" firstAttribute="top" secondItem="Re3-av-NIs" secondAttribute="bottom" constant="20" id="EA1-h0-oAx"/>
                             <constraint firstItem="Ffx-YV-UBx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="F3i-0I-97M"/>
                             <constraint firstItem="jT4-lt-P9K" firstAttribute="top" secondItem="Dcs-SW-JpW" secondAttribute="bottom" constant="15" id="J1a-vT-Kdm"/>
@@ -125,7 +116,6 @@
                             <constraint firstItem="lmh-z0-Dc2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RTz-Ha-Zwg"/>
                             <constraint firstItem="UR5-es-hHW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Stm-CO-Q3Z"/>
                             <constraint firstItem="ouk-Xo-e2R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYQ-qW-IVe"/>
-                            <constraint firstItem="ouk-Xo-e2R" firstAttribute="top" secondItem="rnN-1w-PC7" secondAttribute="bottom" constant="8" symbolic="YES" id="ce9-nh-C2l"/>
                             <constraint firstItem="Ffx-YV-UBx" firstAttribute="top" secondItem="lmh-z0-Dc2" secondAttribute="bottom" constant="20" id="eVS-rh-iUZ"/>
                             <constraint firstItem="UR5-es-hHW" firstAttribute="top" secondItem="a6N-0r-btC" secondAttribute="bottom" constant="25" id="faN-5V-0Te"/>
                             <constraint firstItem="UR5-es-hHW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kzE-MK-Fra"/>
@@ -228,9 +218,6 @@
         <image name="Hamburger" width="1024" height="1024"/>
         <image name="Logo-Negro" width="288" height="53"/>
         <image name="paint" width="128" height="128"/>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

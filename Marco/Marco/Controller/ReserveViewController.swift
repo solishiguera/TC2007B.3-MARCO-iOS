@@ -10,9 +10,10 @@ import Firebase
 import FirebaseAuth
 
 class ReserveViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var numPersonas: UITextField!
     @IBOutlet weak var visitasTableView: UITableView!
+    
     var visits = [Visit]()
     var visitID: String = ""
     override func viewDidLoad() {
@@ -22,14 +23,21 @@ class ReserveViewController: UIViewController, UITableViewDataSource, UITableVie
         fetchData {
             self.visitasTableView.reloadData()
         }
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        tap.cancelsTouchesInView = false
+        
+        view.addGestureRecognizer(tap)
     }
+    
     func fetchData(completed: @escaping () -> ()) {
         let url = URL(string: "https://pacific-inlet-83178.herokuapp.com/visits")
         
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error == nil {
                 do {
-                   try self.visits = JSONDecoder().decode([Visit].self, from: data!)
+                    try self.visits = JSONDecoder().decode([Visit].self, from: data!)
                     
                     DispatchQueue.main.async {
                         completed()
@@ -67,7 +75,11 @@ class ReserveViewController: UIViewController, UITableViewDataSource, UITableVie
         let visit = visits[indexPath.row]
         visitID = visit.id
     }
-
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+    
     @IBAction func reserveButtonPressed(_ sender: Any) {
         guard let userEmail = Auth.auth().currentUser?.email else {return}
         guard let userId = Auth.auth().currentUser?.uid else {return}
