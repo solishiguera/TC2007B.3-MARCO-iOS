@@ -18,8 +18,8 @@ class NewsDetailsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLbl.text = new.title
-        dateLbl.text = new.date
+        titleLbl.text = new.title.capitalized
+        dateLbl.text = new.date.capitalized
         descriptionLbl.text = new.description
         subtitleLbl.text = new.subtitle
         
