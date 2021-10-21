@@ -11,5 +11,5 @@ import Foundation
 struct News: Decodable {
     let id, title, subtitle, date: String
     let description: String
-    let imageURL: String? //Se puede no utilizar pues siempre es nulo
+    let photoUrl: String
 }

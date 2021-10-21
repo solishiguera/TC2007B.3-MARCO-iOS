@@ -248,7 +248,6 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */,
 				C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */,
 				C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */,
 				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
@@ -261,6 +260,7 @@
 				44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */,
 				19F15E0A2710EE48002AC666 /* ExposicionesViewController.xib */,
 				448A125127170D3200A40A6D /* AgendaViewController.xib */,
+				19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";

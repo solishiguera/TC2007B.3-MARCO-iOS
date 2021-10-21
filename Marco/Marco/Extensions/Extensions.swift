@@ -15,6 +15,20 @@ extension UIViewController{
     }
 }
 
+extension UIImageView {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+}
+
 extension UIColor {
     public convenience init?(hex: String) {
         let r, g, b, a: CGFloat
