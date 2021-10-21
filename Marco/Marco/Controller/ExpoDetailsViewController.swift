@@ -19,7 +19,8 @@ class ExpoDetailsViewController: UIViewController {
     @IBOutlet weak var salasLbl: UILabel!
     @IBOutlet weak var tecnicaLbl: UILabel!
     @IBOutlet weak var obrasLbl: UILabel!
-
+    @IBOutlet weak var expoImage: UIImageView!
+    
     @IBOutlet weak var recorridoBtn: UIButton!
     
     @IBOutlet weak var videoWebView: WKWebView!
@@ -34,6 +35,22 @@ class ExpoDetailsViewController: UIViewController {
         salasLbl.text = expo.salas
         tecnicaLbl.text = expo.tecnica
         obrasLbl.text = expo.obras
+        
+        // Create URL
+        var myUrl = expo.photoUrl
+        if(myUrl.contains("http://")) {
+            let fourthIndex = myUrl.index(myUrl.startIndex, offsetBy: 4)
+            myUrl.insert("s", at: fourthIndex)
+        }
+        
+        guard let url = URL(string: myUrl) else { return }
+        
+        // Fetch Image Data
+        if let data = try? Data(contentsOf: url) {
+            // Create Image and Update Image View
+            expoImage.image = UIImage(data: data)
+        }
+        
         recorridoBtn.layer.cornerRadius = 5
         if expo.videoUrl != "" {
             getVideo()
@@ -43,18 +60,18 @@ class ExpoDetailsViewController: UIViewController {
         }
     }
     
-
+    
     func getVideoID(videoUrl: String) -> [String]{
-            let regex = try! NSRegularExpression(pattern: "(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)")
-
-            let results = regex.matches(in: videoUrl,
-                                              range: NSRange(videoUrl.startIndex..., in: videoUrl))
-            return results.map {
-                      String(videoUrl[Range($0.range, in: videoUrl)!])
-            }
-                
+        let regex = try! NSRegularExpression(pattern: "(?<=v(=|/))([-a-zA-Z0-9_]+)|(?<=youtu.be/)([-a-zA-Z0-9_]+)")
+        
+        let results = regex.matches(in: videoUrl,
+                                    range: NSRange(videoUrl.startIndex..., in: videoUrl))
+        return results.map {
+            String(videoUrl[Range($0.range, in: videoUrl)!])
+        }
+        
     }
-     
+    
     func getVideo(){
         let matched = getVideoID(videoUrl: expo.videoUrl!)
         let url = URL(string: "https://www.youtube.com/embed/\(matched[0])")
