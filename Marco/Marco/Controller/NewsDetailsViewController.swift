@@ -24,8 +24,6 @@ class NewsDetailsViewController: UIViewController {
         subtitleLbl.text = new.subtitle
         
         // Create URL
-        print("~~~~~~~~~~~~~~~~HOLA!!~~~~~~~~~~~~~~~~")
-        print(new.photoUrl)
         guard let url = URL(string: new.photoUrl) else { return }
             // Fetch Image Data
             if let data = try? Data(contentsOf: url) {

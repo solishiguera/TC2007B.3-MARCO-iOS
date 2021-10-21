@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="Marco" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVf-9n-0xh">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="10"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.92156862750000001" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="fHJ-59-OpM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marco" translatesAutoresizingMaskIntoConstraints="NO" id="FV4-Tc-Jey">
+                        <rect key="frame" x="0.0" y="10" width="322" height="137"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="137" id="MBz-aB-CSR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cb-H2-osK" userLabel="Title">
+                        <rect key="frame" x="0.0" y="120.5" width="322" height="26.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <size key="shadowOffset" width="-1" height="0.0"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwh-U9-6QH" userLabel="Date">
+                        <rect key="frame" x="0.0" y="10" width="319" height="21.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                        <color key="shadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <size key="shadowOffset" width="-1" height="0.0"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qVf-9n-0xh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3DT-Y2-XCt"/>
+                    <constraint firstItem="FV4-Tc-Jey" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FZl-8f-Ha3"/>
+                    <constraint firstAttribute="trailing" secondItem="1cb-H2-osK" secondAttribute="trailing" id="JlJ-3m-PIO"/>
+                    <constraint firstAttribute="trailing" secondItem="pwh-U9-6QH" secondAttribute="trailing" constant="3" id="Orj-zm-xhE"/>
+                    <constraint firstAttribute="trailing" secondItem="FV4-Tc-Jey" secondAttribute="trailing" id="QXD-ms-HlE"/>
+                    <constraint firstAttribute="bottom" secondItem="1cb-H2-osK" secondAttribute="bottom" id="WxJ-M2-0W3"/>
+                    <constraint firstItem="pwh-U9-6QH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Yzg-69-hqA"/>
+                    <constraint firstAttribute="bottom" secondItem="FV4-Tc-Jey" secondAttribute="bottom" id="iPP-wP-qEB"/>
+                    <constraint firstItem="1cb-H2-osK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pN2-wD-Agh"/>
+                    <constraint firstItem="FV4-Tc-Jey" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ugl-27-Z13"/>
+                    <constraint firstItem="qVf-9n-0xh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vJ1-zr-Fmr"/>
+                    <constraint firstAttribute="trailing" secondItem="qVf-9n-0xh" secondAttribute="trailing" id="x3Y-ue-No1"/>
+                    <constraint firstItem="pwh-U9-6QH" firstAttribute="top" secondItem="qVf-9n-0xh" secondAttribute="bottom" id="yNV-ip-NxB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dateLbl" destination="pwh-U9-6QH" id="jzK-i3-vMA"/>
+                <outlet property="imagen" destination="FV4-Tc-Jey" id="YeN-MO-VAO"/>
+                <outlet property="titleLbl" destination="1cb-H2-osK" id="2UQ-yO-y8o"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="124.21875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Marco" width="770" height="578"/>
+    </resources>
+</document>

@@ -12,7 +12,7 @@ import FirebaseAuth
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var news = [News]()
     
-    @IBOutlet weak var newsTableView: UITableView!
+    @IBOutlet weak var uiTableView: UITableView!
     @IBOutlet var bttnComprarBoletos: UIButton!
     @IBOutlet weak var tag: UILabel!
     
@@ -21,13 +21,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     override func viewDidLoad() {
-        newsTableView.delegate = self
-        newsTableView.dataSource = self
+        uiTableView.delegate = self
+        uiTableView.dataSource = self
         fetchData {
-            self.newsTableView.reloadData()
+            self.uiTableView.reloadData()
         }
 
         super.viewDidLoad()
+        uiTableView.delegate = self
+        uiTableView.dataSource = self
+        let nib = UINib(nibName: "NewsTableViewCell", bundle: nil)
+        uiTableView.register(nib, forCellReuseIdentifier: "NewsCell")
         bttnComprarBoletos.layer.cornerRadius = 5
         // Do any additional setup after loading the view.
         navigationController?.setNavigationBarHidden(false, animated: false)
@@ -35,10 +39,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         if Auth.auth().currentUser != nil{
             let user = Auth.auth().currentUser
             let uid : String = user!.uid
-        db.collection("users").document(uid).getDocument{(doc, error) in
-            let name = doc?.get("nombres")
-            self.tag.text = name as? String
-        }
+            db.collection("users").document(uid).getDocument{(doc, error) in
+                let name = doc?.get("nombres")
+                self.tag.text = name as? String
+            }
         }
     }
     
@@ -46,7 +50,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
@@ -57,7 +61,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
     }
-
+    
     @IBAction func comprarBoleto(_ sender: Any) {
         let buyTicketViewController = BuyTicketViewController(nibName: "BuyTicketViewController", bundle: nil)
         
@@ -80,7 +84,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error == nil {
                 do {
-                   try self.news = JSONDecoder().decode([News].self, from: data!)
+                    try self.news = JSONDecoder().decode([News].self, from: data!)
                     
                     DispatchQueue.main.async {
                         completed()
@@ -97,18 +101,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "newCell")
         let new = news[indexPath.row]
-        cell.textLabel?.text = new.title.capitalized
-        cell.textLabel?.font = UIFont.boldSystemFont(ofSize: 22.0)
-        cell.textLabel?.numberOfLines = 0
-        cell.detailTextLabel?.text = new.description
-        cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
+        let cell = uiTableView.dequeueReusableCell(withIdentifier: "NewsCell") as! NewsTableViewCell
+        cell.titleLbl?.text = new.title.capitalized
+        cell.dateLbl?.text = new.date.capitalized
+        let url = URL(string: new.photoUrl)!
+            // Fetch Image Data
+            if let data = try? Data(contentsOf: url) {
+                // Create Image and Update Image View
+                cell.imagen.image = UIImage(data: data)
+            }
+        cell.layer.cornerRadius = 8
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = NewsDetailsViewController(nibName: "NewsDetailsViewController", bundle: nil)
-            vc.new = news[indexPath.row]
+        vc.new = news[indexPath.row]
         present(vc, animated: true, completion: nil)
     }
 }
