@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -90,7 +91,11 @@ class ViewController: UIViewController {
         let TabBarViewController = storyboard.instantiateViewController(withIdentifier: "tabbar")
         self.navigationController?.pushViewController(TabBarViewController, animated: true)
     }
-    
+    @IBAction func privacidadPressed(_ sender: Any) {
+        let AvisoPrivacidadViewController = AvisoPrivacidadViewController(nibName: "AvisoPrivacidadViewController", bundle: nil)
+        
+        self.present(AvisoPrivacidadViewController, animated: true, completion: nil)
+    }
     
 }
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0816469C26E8AAFE0008FDD4 /* GoogleService-Info.plist */; };
+		1915BD4E27212C5C00344AB7 /* AvisoPrivacidadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1915BD4C27212C5C00344AB7 /* AvisoPrivacidadViewController.swift */; };
+		1915BD4F27212C5C00344AB7 /* AvisoPrivacidadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1915BD4D27212C5C00344AB7 /* AvisoPrivacidadViewController.xib */; };
 		19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */; };
 		19A1DC9C26E6EBC3003F88D0 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */; };
 		19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A1DCA226E90C0B003F88D0 /* Extensions.swift */; };
@@ -79,6 +81,8 @@
 		0816469C26E8AAFE0008FDD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		09E35B62514FBE330D006361 /* Pods_Marco_MarcoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marco_MarcoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		135D0D3B9B52C162303ED0AA /* Pods_MarcoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarcoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1915BD4C27212C5C00344AB7 /* AvisoPrivacidadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvisoPrivacidadViewController.swift; sourceTree = "<group>"; };
+		1915BD4D27212C5C00344AB7 /* AvisoPrivacidadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvisoPrivacidadViewController.xib; sourceTree = "<group>"; };
 		19A1DC9926E6EBC3003F88D0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		19A1DC9A26E6EBC3003F88D0 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		19A1DCA226E90C0B003F88D0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -284,6 +288,7 @@
 				19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */,
 				4490C4212720ED7900C9F8C0 /* NewsTableViewCell.xib */,
 				44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */,
+				1915BD4D27212C5C00344AB7 /* AvisoPrivacidadViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				19FED4A427204DB600584BA0 /* NewsDetailsViewController.swift */,
 				4490C4202720ED7900C9F8C0 /* NewsTableViewCell.swift */,
 				44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */,
+				1915BD4C27212C5C00344AB7 /* AvisoPrivacidadViewController.swift */,
 				44A69CCB272131CD00836CA9 /* HeaderTableViewCell.swift */,
 			);
 			path = Controller;
@@ -426,6 +432,7 @@
 				19FED4A727204DB600584BA0 /* NewsDetailsViewController.xib in Resources */,
 				44A69CCE272131CD00836CA9 /* HeaderTableViewCell.xib in Resources */,
 				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
+				1915BD4F27212C5C00344AB7 /* AvisoPrivacidadViewController.xib in Resources */,
 				19FED4AB2720FA7F00584BA0 /* ReserveViewController.xib in Resources */,
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
 				4490C4232720ED7900C9F8C0 /* NewsTableViewCell.xib in Resources */,
@@ -579,6 +586,7 @@
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
 				19A1DCA326E90C0B003F88D0 /* Extensions.swift in Sources */,
 				44116956270DEA3100572772 /* TabBarViewController.swift in Sources */,
+				1915BD4E27212C5C00344AB7 /* AvisoPrivacidadViewController.swift in Sources */,
 				448A1255271724F900A40A6D /* Event.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
 				44A69CCD272131CD00836CA9 /* HeaderTableViewCell.swift in Sources */,
