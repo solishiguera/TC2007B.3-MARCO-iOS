@@ -9,19 +9,30 @@ import UIKit
 
 class NewsDetailsViewController: UIViewController {
     var new: News!
-    @IBOutlet weak var idLbl: UILabel!
     @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var subtitleLbl: UILabel!
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var descriptionLbl: UILabel!
+
+    @IBOutlet weak var image: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        idLbl.text = new.id
         titleLbl.text = new.title
         dateLbl.text = new.date
         descriptionLbl.text = new.description
         subtitleLbl.text = new.subtitle
+        
+        // Create URL
+        print("~~~~~~~~~~~~~~~~HOLA!!~~~~~~~~~~~~~~~~")
+        print(new.photoUrl)
+        guard let url = URL(string: new.photoUrl) else { return }
+            // Fetch Image Data
+            if let data = try? Data(contentsOf: url) {
+                // Create Image and Update Image View
+                image.image = UIImage(data: data)
+            }
+        
         // Do any additional setup after loading the view.
     }
 
