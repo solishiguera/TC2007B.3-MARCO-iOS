@@ -40,8 +40,19 @@ class AgendaViewController: UIViewController,UITableViewDelegate, UITableViewDat
         }.resume()
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        events[section].date
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let header = Bundle.main.loadNibNamed("HeaderTableViewCell", owner: self, options: nil)?.first as! HeaderTableViewCell
+        let string = events[section].date
+        let dateFormatter = DateFormatter()
+        let tempLocale = dateFormatter.locale
+        dateFormatter.locale = Locale(identifier: "es_ES")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
+        let date = dateFormatter.date(from: string)!
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = tempLocale
+        header.dateLbl.text = dateFormatter.string(from: date)
+        
+        return header
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

@@ -48,8 +48,19 @@ class ReserveViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = UITableViewCell(style: .value1, reuseIdentifier: "visitCell")
         let visit = visits[indexPath.row]
         cell.textLabel?.text = visit.guide
-        cell.detailTextLabel?.text = visit.date
+        
         cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
+        
+        let string = visit.date
+        let dateFormatter = DateFormatter()
+        let tempLocale = dateFormatter.locale
+        dateFormatter.locale = Locale(identifier: "es_ES")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
+        let date = dateFormatter.date(from: string)!
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = tempLocale
+        cell.detailTextLabel?.text = dateFormatter.string(from: date)
+        
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
