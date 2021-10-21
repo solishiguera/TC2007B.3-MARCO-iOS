@@ -49,6 +49,7 @@ class ReserveViewController: UIViewController, UITableViewDataSource, UITableVie
         let visit = visits[indexPath.row]
         cell.textLabel?.text = visit.guide
         cell.detailTextLabel?.text = visit.date
+        cell.backgroundColor = UIColor(red: 243/255, green: 235/255, blue: 230/255, alpha: 1.0)
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

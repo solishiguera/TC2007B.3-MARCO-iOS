@@ -40,6 +40,8 @@
 		44913867270FCB4800E84F6A /* Exposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913866270FCB4800E84F6A /* Exposition.swift */; };
 		4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */; };
 		4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */; };
+		44A69CC5272118EE00836CA9 /* ExpoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */; };
+		44A69CC6272118EE00836CA9 /* ExpoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */; };
 		44BD516427151B3300B7F29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */; };
 		44F22647271520560019A6E3 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F22645271520560019A6E3 /* RestaurantViewController.swift */; };
 		44F22648271520560019A6E3 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F22646271520560019A6E3 /* RestaurantViewController.xib */; };
@@ -116,6 +118,8 @@
 		44913866270FCB4800E84F6A /* Exposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exposition.swift; sourceTree = "<group>"; };
 		44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoDetailsViewController.swift; sourceTree = "<group>"; };
 		44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpoDetailsViewController.xib; sourceTree = "<group>"; };
+		44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoTableViewCell.swift; sourceTree = "<group>"; };
+		44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpoTableViewCell.xib; sourceTree = "<group>"; };
 		44F22645271520560019A6E3 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		44F22646271520560019A6E3 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		51C62C55EE3859E90BC96A39 /* Pods-MarcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.release.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +278,7 @@
 				448A125127170D3200A40A6D /* AgendaViewController.xib */,
 				19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */,
 				4490C4212720ED7900C9F8C0 /* NewsTableViewCell.xib */,
+				44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				448A125027170D3200A40A6D /* AgendaViewController.swift */,
 				19FED4A427204DB600584BA0 /* NewsDetailsViewController.swift */,
 				4490C4202720ED7900C9F8C0 /* NewsTableViewCell.swift */,
+				44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				C423C38F270E896C009B73EA /* BuyTicketViewController.xib in Resources */,
 				44288BEF26E6DB0D00BF42F8 /* LaunchScreen.storyboard in Resources */,
 				C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */,
+				44A69CC6272118EE00836CA9 /* ExpoTableViewCell.xib in Resources */,
 				19FED4A727204DB600584BA0 /* NewsDetailsViewController.xib in Resources */,
 				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
 				19FED4AB2720FA7F00584BA0 /* ReserveViewController.xib in Resources */,
@@ -559,6 +566,7 @@
 				44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */,
 				448A125227170D3200A40A6D /* AgendaViewController.swift in Sources */,
 				19FED4AA2720FA7F00584BA0 /* ReserveViewController.swift in Sources */,
+				44A69CC5272118EE00836CA9 /* ExpoTableViewCell.swift in Sources */,
 				C4CE177B2715224C000A1C6F /* RecorridoWebViewController.swift in Sources */,
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
