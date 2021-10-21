@@ -28,13 +28,23 @@ class ExpoDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLbl.text = expo.title
-        startDate.text = expo.startDate
+        
         descriptionLbl.text = expo.description
         cerraduriaLbl.text = expo.cerraduria
         museografiaLbl.text = expo.museografia
         salasLbl.text = expo.salas
         tecnicaLbl.text = expo.tecnica
         obrasLbl.text = expo.obras
+        
+        let string = expo.startDate
+        let dateFormatter = DateFormatter()
+        let tempLocale = dateFormatter.locale
+        dateFormatter.locale = Locale(identifier: "es_ES")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.sssZ"
+        let date = dateFormatter.date(from: string)!
+        dateFormatter.dateFormat = "dd/MM/yyyy"
+        dateFormatter.locale = tempLocale
+        startDate.text = dateFormatter.string(from: date)
         
         // Create URL
         var myUrl = expo.photoUrl

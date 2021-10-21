@@ -44,6 +44,8 @@
 		4491386B270FE96B00E84F6A /* ExpoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */; };
 		44A69CC5272118EE00836CA9 /* ExpoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */; };
 		44A69CC6272118EE00836CA9 /* ExpoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */; };
+		44A69CCD272131CD00836CA9 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A69CCB272131CD00836CA9 /* HeaderTableViewCell.swift */; };
+		44A69CCE272131CD00836CA9 /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44A69CCC272131CD00836CA9 /* HeaderTableViewCell.xib */; };
 		44BD516427151B3300B7F29E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44288BEB26E6DB0D00BF42F8 /* Assets.xcassets */; };
 		44F22647271520560019A6E3 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F22645271520560019A6E3 /* RestaurantViewController.swift */; };
 		44F22648271520560019A6E3 /* RestaurantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44F22646271520560019A6E3 /* RestaurantViewController.xib */; };
@@ -124,6 +126,8 @@
 		44913869270FE96B00E84F6A /* ExpoDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpoDetailsViewController.xib; sourceTree = "<group>"; };
 		44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpoTableViewCell.swift; sourceTree = "<group>"; };
 		44A69CC4272118EE00836CA9 /* ExpoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExpoTableViewCell.xib; sourceTree = "<group>"; };
+		44A69CCB272131CD00836CA9 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		44A69CCC272131CD00836CA9 /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		44F22645271520560019A6E3 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		44F22646271520560019A6E3 /* RestaurantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantViewController.xib; sourceTree = "<group>"; };
 		51C62C55EE3859E90BC96A39 /* Pods-MarcoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarcoTests.release.xcconfig"; path = "Target Support Files/Pods-MarcoTests/Pods-MarcoTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +271,7 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				44A69CCC272131CD00836CA9 /* HeaderTableViewCell.xib */,
 				19FED4A92720FA7F00584BA0 /* ReserveViewController.xib */,
 				C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */,
 				C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */,
@@ -307,6 +312,7 @@
 				4490C4202720ED7900C9F8C0 /* NewsTableViewCell.swift */,
 				44A69CC3272118EE00836CA9 /* ExpoTableViewCell.swift */,
 				1915BD4C27212C5C00344AB7 /* AvisoPrivacidadViewController.swift */,
+				44A69CCB272131CD00836CA9 /* HeaderTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */,
 				44A69CC6272118EE00836CA9 /* ExpoTableViewCell.xib in Resources */,
 				19FED4A727204DB600584BA0 /* NewsDetailsViewController.xib in Resources */,
+				44A69CCE272131CD00836CA9 /* HeaderTableViewCell.xib in Resources */,
 				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
 				1915BD4F27212C5C00344AB7 /* AvisoPrivacidadViewController.xib in Resources */,
 				19FED4AB2720FA7F00584BA0 /* ReserveViewController.xib in Resources */,
@@ -582,6 +589,7 @@
 				1915BD4E27212C5C00344AB7 /* AvisoPrivacidadViewController.swift in Sources */,
 				448A1255271724F900A40A6D /* Event.swift in Sources */,
 				4491386A270FE96B00E84F6A /* ExpoDetailsViewController.swift in Sources */,
+				44A69CCD272131CD00836CA9 /* HeaderTableViewCell.swift in Sources */,
 				44116959270E7F5000572772 /* TicketViewController.swift in Sources */,
 				19FED4A3271DBD0400584BA0 /* News.swift in Sources */,
 				44913867270FCB4800E84F6A /* Exposition.swift in Sources */,
