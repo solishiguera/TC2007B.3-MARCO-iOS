@@ -16,6 +16,9 @@
 		19FED4A3271DBD0400584BA0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED4A2271DBD0400584BA0 /* News.swift */; };
 		19FED4A627204DB600584BA0 /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED4A427204DB600584BA0 /* NewsDetailsViewController.swift */; };
 		19FED4A727204DB600584BA0 /* NewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */; };
+		19FED4AA2720FA7F00584BA0 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED4A82720FA7F00584BA0 /* ReserveViewController.swift */; };
+		19FED4AB2720FA7F00584BA0 /* ReserveViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19FED4A92720FA7F00584BA0 /* ReserveViewController.xib */; };
+		19FED4AD272105D800584BA0 /* Visits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FED4AC272105D800584BA0 /* Visits.swift */; };
 		44116956270DEA3100572772 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116955270DEA3100572772 /* TabBarViewController.swift */; };
 		44116959270E7F5000572772 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44116957270E7F5000572772 /* TicketViewController.swift */; };
 		4411695A270E7F5000572772 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44116958270E7F5000572772 /* TicketViewController.xib */; };
@@ -81,6 +84,9 @@
 		19FED4A2271DBD0400584BA0 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		19FED4A427204DB600584BA0 /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		19FED4A527204DB600584BA0 /* NewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsViewController.xib; sourceTree = "<group>"; };
+		19FED4A82720FA7F00584BA0 /* ReserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		19FED4A92720FA7F00584BA0 /* ReserveViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReserveViewController.xib; sourceTree = "<group>"; };
+		19FED4AC272105D800584BA0 /* Visits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visits.swift; sourceTree = "<group>"; };
 		40A0FA6438997A8217F3BCB5 /* Pods-Marco.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marco.release.xcconfig"; path = "Target Support Files/Pods-Marco/Pods-Marco.release.xcconfig"; sourceTree = "<group>"; };
 		44116955270DEA3100572772 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		44116957270E7F5000572772 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +251,7 @@
 				44913866270FCB4800E84F6A /* Exposition.swift */,
 				448A1254271724F900A40A6D /* Event.swift */,
 				19FED4A2271DBD0400584BA0 /* News.swift */,
+				19FED4AC272105D800584BA0 /* Visits.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +259,7 @@
 		4484445226E6E46900361F00 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19FED4A92720FA7F00584BA0 /* ReserveViewController.xib */,
 				C4CE177A2715224C000A1C6F /* RecorridoWebViewController.xib */,
 				C4CE176D271519D0000A1C6F /* VideoWebViewController.xib */,
 				C423C38D270E896C009B73EA /* BuyTicketViewController.xib */,
@@ -280,6 +288,7 @@
 				443BE9CE26E8EB3000C406DE /* HomeViewController.swift */,
 				44116955270DEA3100572772 /* TabBarViewController.swift */,
 				44116957270E7F5000572772 /* TicketViewController.swift */,
+				19FED4A82720FA7F00584BA0 /* ReserveViewController.swift */,
 				44F22645271520560019A6E3 /* RestaurantViewController.swift */,
 				19F15E092710EE48002AC666 /* ExposicionesViewController.swift */,
 				44913868270FE96B00E84F6A /* ExpoDetailsViewController.swift */,
@@ -403,6 +412,7 @@
 				C4CE176F271519D0000A1C6F /* VideoWebViewController.xib in Resources */,
 				19FED4A727204DB600584BA0 /* NewsDetailsViewController.xib in Resources */,
 				44BD516427151B3300B7F29E /* Assets.xcassets in Resources */,
+				19FED4AB2720FA7F00584BA0 /* ReserveViewController.xib in Resources */,
 				4411695A270E7F5000572772 /* TicketViewController.xib in Resources */,
 				4490C4232720ED7900C9F8C0 /* NewsTableViewCell.xib in Resources */,
 				0816469D26E8AAFE0008FDD4 /* GoogleService-Info.plist in Resources */,
@@ -544,9 +554,11 @@
 				19FED4A627204DB600584BA0 /* NewsDetailsViewController.swift in Sources */,
 				44913864270FCAD600E84F6A /* Network.swift in Sources */,
 				4490C4222720ED7900C9F8C0 /* NewsTableViewCell.swift in Sources */,
+				19FED4AD272105D800584BA0 /* Visits.swift in Sources */,
 				44F22647271520560019A6E3 /* RestaurantViewController.swift in Sources */,
 				44288BE726E6DB0A00BF42F8 /* ViewController.swift in Sources */,
 				448A125227170D3200A40A6D /* AgendaViewController.swift in Sources */,
+				19FED4AA2720FA7F00584BA0 /* ReserveViewController.swift in Sources */,
 				C4CE177B2715224C000A1C6F /* RecorridoWebViewController.swift in Sources */,
 				44288BE326E6DB0A00BF42F8 /* AppDelegate.swift in Sources */,
 				19A1DC9B26E6EBC3003F88D0 /* SignUpViewController.swift in Sources */,
